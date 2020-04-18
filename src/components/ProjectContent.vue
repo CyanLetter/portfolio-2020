@@ -1,6 +1,28 @@
 <template>
-	<article class="project-content">
-		<video autoplay muted loop playsinline :src="this.currentVideo"></video>
+	<article :class="['project-content', { 'active': this.sharedStore.state.viewingProject }]">
+		<section class="video-container">
+			<video autoplay muted loop playsinline :src="this.currentVideo"></video>
+			<div class="gradient-overlay"></div>
+		</section>
+		
+		<section class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</section>
 	</article>
 </template>
 
@@ -32,12 +54,48 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		width: 100%;
 		overflow: hidden;
+		color: white;
+
+		&.active {
+			position: absolute;
+			overflow-y: auto;
+
+			.video-container {
+				padding-top: 56.25%;
+			}
+
+			.gradient-overlay {
+				opacity: 0;
+			}
+		}
+	}
+
+	.video-container {
+		position: relative;
+		width: 100vw;
+		height: 0px;
+		padding-top: 100%;
+		transition: 1s;
+
+		>* {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	video {
-		width: 100vw;
-		height: 100vh;
 		object-fit: cover;
+	}
+
+	.gradient-overlay {
+		background: rgb(63,0,172);
+		background: linear-gradient(342deg, rgba(63,0,172,1) 0%, rgba(242,0,160,1) 100%);
+		opacity: 0.5;
+		transition: 1s;
 	}
 </style>

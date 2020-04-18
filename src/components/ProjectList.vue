@@ -1,5 +1,5 @@
 <template>
-	<ul id="project-list" ref="project-list">
+	<ul id="project-list" ref="project-list" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]">
 		<li class="project-list-item" v-for="project in projects" :key="project.title">
 			<h2>
 				{{project.title}}
@@ -23,7 +23,8 @@
 			return {
 				projects: projectData,
 				sharedStore: window.store,
-				scrollIndex: 0
+				scrollIndex: 0,
+				lastScrollPosition: 0
 			}
 		},
 		computed: {
@@ -32,6 +33,21 @@
 		watch: {
 			scrollIndex() {
 				this.sharedStore.setCurrentProject(this.scrollIndex);
+			},
+			"sharedStore.state.viewingProject"() {
+				// set and restore scroll position on our list element
+				if (this.sharedStore.state.viewingProject === false) {
+					this.$nextTick(() => {
+						document.scrollingElement.scrollTop = this.lastScrollPosition;
+					});
+					
+				} else if (this.sharedStore.state.viewingProject === true) {
+					this.$nextTick(() => {
+						document.scrollingElement.scrollTop = 0;
+						document.getElementById("project-list").scrollTop = this.lastScrollPosition
+					});
+					
+				}
 			}
 		},
 		created() {
@@ -44,6 +60,11 @@
 		},
 		methods: {
 			calculateProjectIndex() {
+				if (this.sharedStore.state.viewingProject) {
+					return;
+				}
+
+				this.lastScrollPosition = document.scrollingElement.scrollTop;
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);
@@ -56,6 +77,13 @@
 	#project-list {
 		position: relative;
 		width: 100%;
+		transition: 1s;
+
+		&.fade-out {
+			overflow: hidden;
+			height: 100vh;
+			transform: translateX(-100%);
+		}
 	}
 
 	.project-list-item {
@@ -75,5 +103,6 @@
 		font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		mix-blend-mode: overlay;
 	}
 </style>
