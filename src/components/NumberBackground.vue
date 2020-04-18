@@ -1,5 +1,5 @@
 <template>
-	<inline-svg id="svg-bg" :src="bgSvg" @loaded="svgLoaded($event)"></inline-svg>
+	<inline-svg id="svg-bg" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]" :src="bgSvg" @loaded="svgLoaded($event)"></inline-svg>
 </template>
 
 <script>
@@ -53,7 +53,10 @@
 					return;
 				}
 
-				this.setNumberScale();
+				this.$nextTick(() => {
+					this.setNumberScale();
+				});
+				
 			},
 			setNumberScale() {
 				let dWidth = document.body.clientWidth;
@@ -95,7 +98,7 @@
 			},
 			cycleProject() {
 				this.sharedStore.setCurrentProject(this.sharedStore.state.currentProject + 1);
-				
+
 				if (this.sharedStore.state.currentProject >= this.svgNumbers.length) {
 					this.sharedStore.setCurrentProject(0);
 				}
@@ -112,13 +115,12 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-	}
 
-	.svg-number {
-		opacity: 0;
-	}
+		transition: 1s;
 
-	.active {
-		opacity: 1;
+		&.fade-out {
+			opacity: 0;
+			transform: scale(3);
+		}
 	}
 </style>

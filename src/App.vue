@@ -3,6 +3,7 @@
 		<div id="nav">
 			<router-link to="/">Home</router-link> |
 			<router-link to="/about">About?</router-link>
+			<div id="enter-proj-test">Toggle Entered</div>
 		</div>
 		<router-view/>
 	</div>
@@ -17,6 +18,9 @@
 		},
 		mounted: function() {
 			console.log("Mounted App");
+			document.getElementById("enter-proj-test").addEventListener("click", () => {
+				this.sharedStore.toggleProjectView();
+			});
 		}
 	}
 </script>
@@ -25,9 +29,13 @@
 // include fonts
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans" );
 
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	height: 100%;
-	background: red;
+	background: #000;
 }
 
 body {
@@ -38,9 +46,14 @@ body {
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
 }
 
 #nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
 	padding: 30px;
 
 	a {
@@ -50,6 +63,17 @@ h1, h2, h3, h4, h5 {
 		&.router-link-exact-active {
 			color: #42b983;
 		}
+	}
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 0; // fix inline-block spacing
+
+	li {
+		font-size: 1rem;
+		list-style: none;
 	}
 }
 </style>

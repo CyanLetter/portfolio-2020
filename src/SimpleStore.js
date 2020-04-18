@@ -2,8 +2,9 @@ export class SimpleStore {
 	constructor() {
 		this.debug = true;
 		this.state = {
-			currentProject: 0
-		}
+			currentProject: 0,
+			viewingProject: false
+		};
 	}
 
 	setCurrentProject(index) {
@@ -12,5 +13,29 @@ export class SimpleStore {
 		}
 
 		this.state.currentProject = index;
+	}
+
+	enterProject() {
+		if (this.debug) {
+			console.log("Entering Project");
+		}
+
+		this.state.viewingProject = true;
+	}
+
+	exitProject() {
+		if (this.debug) {
+			console.log("Exiting Project");
+		}
+
+		this.state.viewingProject = false;
+	}
+
+	toggleProjectView() {
+		if (this.debug) {
+			console.log("Toggling Project");
+		}
+
+		this.state.viewingProject = !this.state.viewingProject;
 	}
 }
