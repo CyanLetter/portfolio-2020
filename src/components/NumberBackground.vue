@@ -88,11 +88,14 @@
 				});
 			},
 			setNumberForCurrentProject() {
+				if (!this.bgLoaded) {
+					return;
+				}
 				for (let i = 0; i < this.svgNumbers.length; i++) {
 					if (i === this.sharedStore.state.currentProject) {
-						this.svgNumbers[i].setAttribute("display", "block");
+						this.svgNumbers[i].classList.add("active");
 					} else {
-						this.svgNumbers[i].setAttribute("display", "none");
+						this.svgNumbers[i].classList.remove("active");
 					}
 				}
 			},
@@ -108,7 +111,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 	#svg-bg {
 		width: 100%;
 		height: 100%;
@@ -121,6 +124,17 @@
 		&.fade-out {
 			opacity: 0;
 			transform: scale(3);
+		}
+	}
+
+	.svg-number {
+		transition: 0.2s;
+		transition-timing-function: ease-in;
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+			transition-timing-function: ease-out;
 		}
 	}
 </style>

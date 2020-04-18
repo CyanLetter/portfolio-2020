@@ -12,7 +12,7 @@
 </template>
 
 <script>
-	import projectData from '../assets/data/projectData.json'
+	import projectData from '../assets/data/projectData.json';
 
 	export default {
 		name: 'ProjectList',

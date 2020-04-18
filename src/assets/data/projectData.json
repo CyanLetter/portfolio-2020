@@ -1,38 +1,47 @@
 [
 	{
 		"title": "Word Play",
-		"client": "MODA"
+		"client": "MODA",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Science",
-		"client": "PBS Kids"
+		"client": "PBS Kids",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Spacehole",
-		"client": "Furious Union"
+		"client": "Furious Union",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Universe",
-		"client": "Cartoon Network / Dove"
+		"client": "Cartoon Network / Dove",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Nest",
-		"client": "Sesame Workshop"
+		"client": "Sesame Workshop",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Elmo",
-		"client": "Sesame Workshop"
+		"client": "Sesame Workshop",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Adventure",
-		"client": "Jim Henson"
+		"client": "Jim Henson",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Primal",
-		"client": "Primal Screen"
+		"client": "Primal Screen",
+		"video": "WordPlayMontage_01_720.mp4"
 	},
 	{
 		"title": "Village",
-		"client": "Primal Screen"
+		"client": "Primal Screen",
+		"video": "WordPlayMontage_01_720.mp4"
 	}
 ]
