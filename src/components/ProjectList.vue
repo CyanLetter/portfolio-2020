@@ -1,7 +1,7 @@
 <template>
 	<ul id="project-list" ref="project-list" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]">
 		<li class="project-list-item" v-for="project in projects" :key="project.title">
-			<h2>
+			<h2 v-on:click="enterProject" :tabindex="focusable" role="button">
 				{{project.title}}
 			</h2>
 			<h3>
@@ -16,9 +16,6 @@
 
 	export default {
 		name: 'ProjectList',
-		props: {
-			
-		},
 		data() {
 			return {
 				projects: projectData,
@@ -28,7 +25,9 @@
 			}
 		},
 		computed: {
-
+			focusable() {
+				return this.sharedStore.state.viewingProject === true ? -1 : 0;
+			}
 		},
 		watch: {
 			scrollIndex() {
@@ -68,6 +67,9 @@
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);
+			},
+			enterProject() {
+				this.sharedStore.enterProject();
 			}
 		}
 	}
@@ -101,6 +103,7 @@
 	}
 
 	h2 {
+		cursor: pointer;
 		font-size: 3rem;
 		margin: 0.5rem 0;
 		letter-spacing: 0.1rem;
@@ -112,6 +115,10 @@
 		@include breakpoint($bp-med) {
 			font-size: 5rem;
 			letter-spacing: 0.2rem;
+		}
+
+		&:focus {
+			outline: none;
 		}
 	}
 	h3 {

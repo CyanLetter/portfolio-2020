@@ -70,6 +70,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+	@import "../assets/scss/variables.scss";
+
 	.project-content {
 		position: fixed;
 		top: 0;
@@ -85,6 +87,12 @@
 			.video-container {
 				min-height: 0px;
 				padding-top: 56.25%;
+
+				margin-top: 150px;
+
+				@include breakpoint($bp-med) {
+					margin-top: 100px;
+				}
 			}
 
 			.gradient-overlay {
