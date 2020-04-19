@@ -7,7 +7,7 @@
     </style>
 
     <defs>
-        <linearGradient x1="43.1982422%" y1="15.3511047%" x2="95.0911458%" y2="78.9730072%" id="linearGradient-1">
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" gradientTransform="rotate(20)" id="svg-gradient">
             <stop stop-color="#AE236A" offset="0%"></stop>
             <stop stop-color="#3812A0" offset="100%"></stop>
         </linearGradient>
@@ -73,7 +73,7 @@
     </filter>
     </defs>
 
-    <g fill="url(#linearGradient-1)" mask="url(#n01)">
+    <g fill="url(#svg-gradient)" mask="url(#n01)">
         <rect id="BG" x="0" y="0" width="100%" height="100%"></rect>
 
         <g id="dot-group" transform="translate(120.000000, 120.000000)" fill="#999">

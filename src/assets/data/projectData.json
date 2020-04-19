@@ -2,46 +2,91 @@
 	{
 		"title": "Word Play",
 		"client": "MODA",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "#3812A0",
+			"color2" : "#AE236A",
+			"angle" : "-18"
+		}
 	},
 	{
 		"title": "Science",
 		"client": "PBS Kids",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "#017a9d",
+			"color2" : "#00cf9b",
+			"angle" : "8"
+		}
 	},
 	{
 		"title": "Spacehole",
 		"client": "Furious Union",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Universe",
 		"client": "Cartoon Network / Dove",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Nest",
 		"client": "Sesame Workshop",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Elmo",
 		"client": "Sesame Workshop",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Adventure",
 		"client": "Jim Henson",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Primal",
 		"client": "Primal Screen",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	},
 	{
 		"title": "Village",
 		"client": "Primal Screen",
-		"video": "WordPlayMontage_01_720.mp4"
+		"video": "WordPlayMontage_01_720.mp4",
+		"gradient" : {
+			"color1" : "",
+			"color2" : "",
+			"angle" : ""
+		}
 	}
 ]

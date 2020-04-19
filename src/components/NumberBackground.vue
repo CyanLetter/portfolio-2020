@@ -4,6 +4,8 @@
 
 <script>
 	import InlineSvg from 'vue-inline-svg';
+	import TweenMax from 'gsap';
+	import projectData from '../assets/data/projectData.json';
 
 	export default {
 		name: 'NumberBackground',
@@ -20,11 +22,13 @@
 				bgLoaded: false,
 				svgDots: null,
 				svgNumbers: null,
+				projects: projectData
 			}
 		},
 		watch: {
 			"sharedStore.state.currentProject": function() {
 				this.setNumberForCurrentProject();
+				this.changeGradient();
 			}
 		},
 		created() {
@@ -105,6 +109,24 @@
 				if (this.sharedStore.state.currentProject >= this.svgNumbers.length) {
 					this.sharedStore.setCurrentProject(0);
 				}
+			},
+			changeGradient() {
+				if (!this.bgLoaded) {
+					return;
+				}
+				let newGradient = this.projects[this.sharedStore.state.currentProject].gradient;
+				let svgGradient = document.getElementById("svg-gradient");
+				TweenMax.to(svgGradient.children[0], 0.5, {
+					stopColor: newGradient.color1
+				});
+				TweenMax.to(svgGradient.children[1], 0.5, {
+					stopColor: newGradient.color2
+				});
+				TweenMax.to(svgGradient, 0.5, {
+					attr: {
+						gradientTransform: "rotate(" + newGradient.angle + ")"
+					}
+				});
 			}
 		}
 	}
@@ -124,6 +146,7 @@
 		&.fade-out {
 			opacity: 0;
 			transform: scale(3);
+			pointer-events: none;
 		}
 	}
 

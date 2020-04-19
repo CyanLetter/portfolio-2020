@@ -2,7 +2,7 @@
 	<article :class="['project-content', { 'active': this.sharedStore.state.viewingProject }]">
 		<section class="video-container">
 			<video autoplay muted loop playsinline :src="this.currentVideo"></video>
-			<div class="gradient-overlay"></div>
+			<div class="gradient-overlay" ref="gradient"></div>
 		</section>
 		
 		<section class="content">
@@ -28,6 +28,7 @@
 
 <script>
 	import projectData from '../assets/data/projectData.json';
+	import TweenMax from 'gsap';
 
 	export default {
 		name: 'ProjectContent',
@@ -40,9 +41,25 @@
 				sharedStore: window.store
 			}
 		},
+		watch: {
+			"sharedStore.state.currentProject": function() {
+				this.changeGradient();
+			}
+		},
 		computed: {
 			currentVideo() {
 				return require("../assets/video/" + this.projects[this.sharedStore.state.currentProject].video);
+			},
+			currentGradient() {
+				let newGradient = this.projects[this.sharedStore.state.currentProject].gradient;
+				return "linear-gradient(" + newGradient.angle + "deg, " + newGradient.color1 + " 0%, " + newGradient.color2 + " 100%)";
+			}
+		},
+		methods: {
+			changeGradient() {
+				TweenMax.to(this.$refs["gradient"], 0.5, {
+					background: this.currentGradient
+				});
 			}
 		}
 	}
@@ -93,9 +110,7 @@
 	}
 
 	.gradient-overlay {
-		background: rgb(63,0,172);
-		background: linear-gradient(342deg, rgba(63,0,172,1) 0%, rgba(242,0,160,1) 100%);
 		opacity: 0.5;
-		transition: 1s;
+		transition: opacity 1s;
 	}
 </style>
