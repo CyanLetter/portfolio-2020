@@ -46,6 +46,9 @@
 				this.changeGradient();
 			}
 		},
+		mounted() {
+			this.changeGradient();
+		},
 		computed: {
 			currentVideo() {
 				return require("../assets/video/" + this.projects[this.sharedStore.state.currentProject].video);
@@ -80,6 +83,7 @@
 			overflow-y: auto;
 
 			.video-container {
+				min-height: 0px;
 				padding-top: 56.25%;
 			}
 
@@ -92,7 +96,7 @@
 	.video-container {
 		position: relative;
 		width: 100vw;
-		height: 0px;
+		min-height: 100vh;
 		padding-top: 100%;
 		transition: 1s;
 

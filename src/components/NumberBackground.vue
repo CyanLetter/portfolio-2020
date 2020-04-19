@@ -51,6 +51,7 @@
 
 				this.setNumberScale();
 				this.setNumberForCurrentProject();
+				this.changeGradient();
 			},
 			onResize() {
 				if (!this.bgLoaded) {
