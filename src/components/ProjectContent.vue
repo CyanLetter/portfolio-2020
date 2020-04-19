@@ -5,23 +5,18 @@
 			<div class="gradient-overlay" ref="gradient"></div>
 		</section>
 		
-		<section class="content">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+		<section class="content" :style="{ background: currentArticleBackground }">
+			<section v-for="item in currentArticle" :key="item.title">
+				<h3>
+					{{ item.title }}
+				</h3>
+				<p>
+					{{ item.body }}
+
+					<a v-if="item.link" :href="item.link.url" target="_blank">{{ item.link.title }}</a>
+				</p>
+			</section>
+			<div class="squiggle"></div>
 		</section>
 	</article>
 </template>
@@ -56,6 +51,12 @@
 			currentGradient() {
 				let newGradient = this.projects[this.sharedStore.state.currentProject].gradient;
 				return "linear-gradient(" + newGradient.angle + "deg, " + newGradient.color1 + " 0%, " + newGradient.color2 + " 100%)";
+			},
+			currentArticle() {
+				return this.projects[this.sharedStore.state.currentProject].articleContent;
+			},
+			currentArticleBackground() {
+				return this.projects[this.sharedStore.state.currentProject].articleColor;
 			}
 		},
 		methods: {
@@ -85,8 +86,8 @@
 			overflow-y: auto;
 
 			.video-container {
-				min-height: 0px;
-				padding-top: 56.25%;
+				min-height: 50vh;
+				padding-top: 40%;
 
 				margin-top: 150px;
 
@@ -124,5 +125,67 @@
 	.gradient-overlay {
 		opacity: 0.5;
 		transition: opacity 1s;
+	}
+
+	.content {
+		background: red;
+		padding: 40px 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		>section {
+			display: flex;
+			flex-direction: column;
+			max-width: 850px;
+			margin-bottom: 80px;
+		}
+
+		h3 {
+			font-size: 2rem;
+			line-height: 3rem;
+			letter-spacing: 0.1rem;
+			padding-right: 20px;
+			margin: 0 0 20px;
+		}
+
+		p {
+			font-size: 1.2rem;
+			line-height: 2rem;
+			margin: 5px 0 0;
+		}
+
+		a {
+			display: block;
+			color: white;
+			margin: 10px auto;
+		}
+
+		@include breakpoint($bp-med) {
+			padding: 50px;
+
+			>section {
+				flex-direction: row;
+			}
+
+			h3 {
+				width: 40%;
+			}
+
+			p {
+				width: 60%;
+			}
+		}
+	}
+
+	.squiggle {
+		position: relative;
+		width: 70%;
+		max-width: 300px;
+		height: 13px;
+		margin-bottom: 50px;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0ic3F1aWdnbGUtc3JjIiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMjAgMTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDM5LjEgKDMxNzIwKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPHBhdGggZD0iTTAsMTAgQzYsMTAgNCwwIDEwLDAgQzE2LDAgMTUsMTAgMjAsMTAiIGlkPSJQYXRoLTMtQ29weS0xMyIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiPjwvcGF0aD4KPC9zdmc+");
+		background-position: center;
 	}
 </style>

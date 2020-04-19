@@ -7,7 +7,33 @@
 			"color1" : "#3812A0",
 			"color2" : "#AE236A",
 			"angle" : "-18"
-		}
+		},
+		"articleColor" : "#090f52",
+		"articleContent" : [
+			{
+				"title" : "An Interactive Museum Exhibit",
+				"body" : "Word Play was an interactive installation spanning a 40ft section of wall at the Museum of Design Atlanta. Visitors who walked through the center of the room were rewarded with the chance to fling ribbons of text across the gallery walls, streams of text acting as extensions of their hands. When idle, the blue text crawling slowly along the wall added colorful amience to the dim gallery.",
+				"link" : {
+					"title" : "View the project on primalscreen.com",
+					"url" : "https://www.primalscreen.com/project/moda-wordplay"
+				}
+			},
+			{
+				"title" : "Text Me",
+				"body" : "Featured in Text Me: How We Live in Language at the Museum of Design Atlanta, this installation was displayed alongside work by Stefan Sagmeister, Milton Glaser and Paula Scher, among others. It occupied an entire wall of a space devoted to interactive and video art, and was a popular point of engagement for kids and adults alike.",
+				"link" : {
+					"title" : "Details at museumofdesign.org",
+					"url" : "https://www.museumofdesign.org/textme"
+				}
+			},
+			{
+				"title" : "Motion Controlled",
+			},
+			{
+				"title" : "Role",
+				"body" : "I served as the lead developer, and handled all of the programming for this project. That included typical Unity scripting, interfacing with the Kinect SDK, building the Unity scene, and making some on-the-fly changes during installation. It was the first time I have had to write code while upside-down on a ladder, and hopefully the last."
+			}
+		]
 	},
 	{
 		"title": "Science",
@@ -17,7 +43,9 @@
 			"color1" : "#017a9d",
 			"color2" : "#00cf9b",
 			"angle" : "8"
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Spacehole",
@@ -27,7 +55,9 @@
 			"color1" : "#c93600",
 			"color2" : "#270091",
 			"angle" : "-10"
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Universe",
@@ -37,7 +67,9 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Nest",
@@ -47,7 +79,9 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Elmo",
@@ -57,7 +91,9 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Adventure",
@@ -67,7 +103,9 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Primal",
@@ -77,7 +115,9 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	},
 	{
 		"title": "Village",
@@ -87,6 +127,8 @@
 			"color1" : "",
 			"color2" : "",
 			"angle" : ""
-		}
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": []
 	}
 ]
