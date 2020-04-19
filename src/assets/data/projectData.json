@@ -28,6 +28,7 @@
 			},
 			{
 				"title" : "Motion Controlled",
+				"body" : "This project was developed in Unity, and a single Microsoft Kinect mounted at the center of the display drove the interactivity. Kinect’s excellent built in skeletal tracking and strong community support made development a breeze, allowing the team to prototype and deliver quickly."
 			},
 			{
 				"title" : "Role",
