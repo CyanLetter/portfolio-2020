@@ -24,9 +24,9 @@
 		"client": "Furious Union",
 		"video": "WordPlayMontage_01_720.mp4",
 		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
+			"color1" : "#c93600",
+			"color2" : "#270091",
+			"angle" : "-10"
 		}
 	},
 	{
