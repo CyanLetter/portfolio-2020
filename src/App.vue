@@ -26,54 +26,55 @@
 </script>
 
 <style lang="scss">
-// include fonts
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans" );
+	// include fonts
+	@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans" );
+	@import "./assets/scss/variables.scss";
 
-* {
-	box-sizing: border-box;
-}
+	* {
+		box-sizing: border-box;
+	}
 
-html, body {
-	height: 100%;
-	background: #000;
-}
+	html, body {
+		height: 100%;
+		background: #000;
+	}
 
-body {
-	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+	body {
+		font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
-h1, h2, h3, h4, h5 {
-	font-family: 'Libre Baskerville', serif;
-	font-weight: bold;
-}
-
-#nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	padding: 30px;
-
-	a {
+	h1, h2, h3, h4, h5 {
+		font-family: 'Libre Baskerville', serif;
 		font-weight: bold;
-		color: #2c3e50;
+	}
 
-		&.router-link-exact-active {
-			color: #42b983;
+	#nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		padding: 30px;
+
+		a {
+			font-weight: bold;
+			color: #2c3e50;
+
+			&.router-link-exact-active {
+				color: #42b983;
+			}
 		}
 	}
-}
 
-ul {
-	list-style-type: none;
-	padding: 0;
-	font-size: 0; // fix inline-block spacing
+	ul {
+		list-style-type: none;
+		padding: 0;
+		font-size: 0; // fix inline-block spacing
 
-	li {
-		font-size: 1rem;
-		list-style: none;
+		li {
+			font-size: 1rem;
+			list-style: none;
+		}
 	}
-}
 </style>

@@ -1,0 +1,9 @@
+$bp-xlarge: 1440px;
+$bp-large: 1080px;
+$bp-med: 768px;
+$bp-small: 480px;
+
+@mixin breakpoint($point) {
+	// breakpoint now applies to any styles when viewport is greater than this width
+	@media only screen and (min-width: $point) { @content; }
+}

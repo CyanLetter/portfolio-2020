@@ -74,6 +74,8 @@
 </script>
 
 <style scoped lang="scss">
+	@import "../assets/scss/variables.scss";
+
 	#project-list {
 		position: relative;
 		width: 100%;
@@ -90,19 +92,39 @@
 		width: 100%;
 		height: 100vh;
 		padding-top: 40vh;
-		padding-left: 10vh;
+		padding-left: 5%;
 		color: white;
+
+		@include breakpoint($bp-med) {
+			padding-left: 10vh;
+		}
 	}
 
 	h2 {
-		font-size: 5rem;
-		margin: 1rem 0;
-		letter-spacing: 0.2rem;
+		font-size: 3rem;
+		margin: 0.5rem 0;
+		letter-spacing: 0.1rem;
+
+		@include breakpoint($bp-small) {
+			margin: 1rem 0;
+		}
+
+		@include breakpoint($bp-med) {
+			font-size: 5rem;
+			letter-spacing: 0.2rem;
+		}
 	}
 	h3 {
 		font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
+		font-size: 1rem;
 		letter-spacing: 0.2rem;
+		margin-left: 0.25rem;
 		mix-blend-mode: overlay;
+
+		@include breakpoint($bp-med) {
+			font-size: 1.5rem;
+			margin-left: 0.6rem;
+		}
 	}
 </style>
