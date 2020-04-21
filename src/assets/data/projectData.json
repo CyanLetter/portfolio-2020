@@ -1,5 +1,26 @@
 [
 	{
+		"title": "Fantastical",
+		"client": "Fantastica Labs",
+		"video": "FantasticalMontage.mp4",
+		"gradient" : {
+			"color1" : "#04138f",
+			"color2" : "#09d5df",
+			"angle" : "10"
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
+	},
+	{
 		"title": "Word Play",
 		"client": "MODA",
 		"video": "WordPlayMontage_01_720.mp4",
@@ -8,7 +29,7 @@
 			"color2" : "#AE236A",
 			"angle" : "-18"
 		},
-		"articleColor" : "#090f52",
+		"articleColor" : "linear-gradient(8deg, rgba(88,11,115,1) 0%, rgba(42,16,117,1) 100%)",
 		"articleContent" : [
 			{
 				"title" : "An Interactive Museum Exhibit",
@@ -39,97 +60,127 @@
 	{
 		"title": "Science",
 		"client": "PBS Kids",
-		"video": "WordPlayMontage_01_720.mp4",
+		"video": "ScienceAppMontage.mp4",
 		"gradient" : {
-			"color1" : "#017a9d",
-			"color2" : "#00cf9b",
+			"color1" : "#08bdff",
+			"color2" : "#0bd69b",
+			"angle" : "20"
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
+	},
+	{
+		"title": "Street",
+		"client": "Sesame Workshop",
+		"video": "SesameMontage.mp4",
+		"gradient" : {
+			"color1" : "#980909",
+			"color2" : "#ddd100",
+			"angle" : "-18"
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
+	},
+	{
+		"title": "Adventure",
+		"client": "Jim Henson",
+		"video": "DinoTrainMontage.mp4",
+		"gradient" : {
+			"color1" : "#c7c602",
+			"color2" : "#0dac20",
 			"angle" : "8"
 		},
 		"articleColor" : "#2f2f2f",
-		"articleContent": []
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
 	},
 	{
 		"title": "Spacehole",
 		"client": "Furious Union",
-		"video": "WordPlayMontage_01_720.mp4",
+		"video": "MegaSpacehole_720.mp4",
 		"gradient" : {
 			"color1" : "#c93600",
 			"color2" : "#270091",
 			"angle" : "-10"
 		},
 		"articleColor" : "#2f2f2f",
-		"articleContent": []
-	},
-	{
-		"title": "Universe",
-		"client": "Cartoon Network / Dove",
-		"video": "WordPlayMontage_01_720.mp4",
-		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
-		},
-		"articleColor" : "#2f2f2f",
-		"articleContent": []
-	},
-	{
-		"title": "Nest",
-		"client": "Sesame Workshop",
-		"video": "WordPlayMontage_01_720.mp4",
-		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
-		},
-		"articleColor" : "#2f2f2f",
-		"articleContent": []
-	},
-	{
-		"title": "Elmo",
-		"client": "Sesame Workshop",
-		"video": "WordPlayMontage_01_720.mp4",
-		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
-		},
-		"articleColor" : "#2f2f2f",
-		"articleContent": []
-	},
-	{
-		"title": "Adventure",
-		"client": "Jim Henson",
-		"video": "WordPlayMontage_01_720.mp4",
-		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
-		},
-		"articleColor" : "#2f2f2f",
-		"articleContent": []
-	},
-	{
-		"title": "Primal",
-		"client": "Primal Screen",
-		"video": "WordPlayMontage_01_720.mp4",
-		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
-		},
-		"articleColor" : "#2f2f2f",
-		"articleContent": []
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
 	},
 	{
 		"title": "Village",
 		"client": "Primal Screen",
-		"video": "WordPlayMontage_01_720.mp4",
+		"video": "VRVillageMontage.mp4",
 		"gradient" : {
-			"color1" : "",
-			"color2" : "",
-			"angle" : ""
+			"color1" : "#181838",
+			"color2" : "#7800dd",
+			"angle" : "15"
 		},
 		"articleColor" : "#2f2f2f",
-		"articleContent": []
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
+	},
+	{
+		"title": "Ephemera",
+		"client": "Personal Projects",
+		"video": "VRVillageMontage.mp4",
+		"gradient" : {
+			"color1" : "#181838",
+			"color2" : "#7800dd",
+			"angle" : "15"
+		},
+		"articleColor" : "#2f2f2f",
+		"articleContent": [
+			{
+				"title" : "Lorem Ipsum",
+				"body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"link" : {
+					"title" : "Link to dakotaling.com",
+					"url" : "https://www.dakotaling.com"
+				}
+			}
+		]
 	}
 ]

@@ -4,7 +4,6 @@
 		<div :class="['squiggle', { shrink: this.sharedStore.state.viewingProject }]"></div>
 		<nav>
 			<router-link to="/">Work</router-link>
-			<router-link to="/about">Play</router-link>
 			<router-link to="/about">About</router-link>
 		</nav>
 	</header>
