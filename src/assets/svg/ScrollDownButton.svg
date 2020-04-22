@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ScrollDownButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ScrollDownButton" transform="translate(2.000000, 2.000000)" stroke="#FFFFFF">
+            <g id="Group-5">
+                <circle id="Oval-3" stroke-width="4" cx="35" cy="35" r="35"></circle>
+                <polyline id="Line" stroke-width="4" stroke-linecap="square" points="18.5 40.5 35 57 51.5 40.5"></polyline>
+                <path d="M35,14.3845481 L35,55.0106353" id="Line" stroke-width="4" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

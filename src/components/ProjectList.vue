@@ -1,27 +1,37 @@
 <template>
-	<ul id="project-list" ref="project-list" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]">
-		<li class="project-list-item" v-for="project in projects" :key="project.title">
-			<h2 v-on:click="enterProject" :tabindex="focusable" role="button">
-				{{project.title}}
-			</h2>
-			<h3>
-				{{project.client}}
-			</h3>
-		</li>
-	</ul>
+	<section id="project-list" ref="project-list" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]">
+		<ul>
+			<li class="project-list-item" v-for="project in projects" :key="project.title">
+				<h2 v-on:click="enterProject" :tabindex="focusable" role="button">
+					{{project.title}}
+				</h2>
+				<h3>
+					{{project.client}}
+				</h3>
+			</li>
+		</ul>
+		<inline-svg :src="scrollSvg" :class="['scroll-arrow', { 'fade-out': this.didScroll }]" v-on:click="scrollProjects" :tabindex="focusable" role="button"></inline-svg>
+	</section>
 </template>
 
 <script>
 	import projectData from '../assets/data/projectData.json';
+	import TweenMax from 'gsap';
+	import InlineSvg from 'vue-inline-svg';
 
 	export default {
 		name: 'ProjectList',
+		components: {
+			InlineSvg
+		},
 		data() {
 			return {
 				projects: projectData,
 				sharedStore: window.store,
+				scrollSvg: require('../assets/svg/ScrollDownButton.svg'),
 				scrollIndex: 0,
-				lastScrollPosition: 0
+				lastScrollPosition: 0,
+				didScroll: false
 			}
 		},
 		computed: {
@@ -59,6 +69,9 @@
 		},
 		methods: {
 			calculateProjectIndex() {
+				// handle scroll flag
+				this.didScroll = true;
+
 				if (this.sharedStore.state.viewingProject) {
 					return;
 				}
@@ -70,6 +83,11 @@
 			},
 			enterProject() {
 				this.sharedStore.enterProject();
+			},
+			scrollProjects() {
+				TweenMax.to(document.scrollingElement, 1, {
+					scrollTop: document.scrollingElement.scrollTop + document.body.clientHeight
+				});
 			}
 		}
 	}
@@ -132,6 +150,24 @@
 		@include breakpoint($bp-med) {
 			font-size: 1.5rem;
 			margin-left: 0.6rem;
+		}
+	}
+
+	.scroll-arrow {
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 100px;
+		padding: 30px;
+		transition: 0.3s;
+		cursor: pointer;
+
+		&.fade-out {
+			opacity: 0;
+			pointer-events: none;
+			cursor: none;
 		}
 	}
 </style>
