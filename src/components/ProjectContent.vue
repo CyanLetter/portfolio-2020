@@ -17,6 +17,7 @@
 				</p>
 			</section>
 			<div class="squiggle"></div>
+			<inline-svg :src="closeSvg" class="close" v-on:click="exitProject" tabindex="0" role="button"></inline-svg>
 		</section>
 	</article>
 </template>
@@ -24,16 +25,18 @@
 <script>
 	import projectData from '../assets/data/projectData.json';
 	import TweenMax from 'gsap';
+	import InlineSvg from 'vue-inline-svg';
 
 	export default {
 		name: 'ProjectContent',
-		props: {
-			
+		components: {
+			InlineSvg
 		},
 		data() {
 			return {
 				projects: projectData,
-				sharedStore: window.store
+				sharedStore: window.store,
+				closeSvg: require('../assets/svg/CloseButton.svg')
 			}
 		},
 		watch: {
@@ -64,6 +67,9 @@
 				TweenMax.to(this.$refs["gradient"], 0.5, {
 					background: this.currentGradient
 				});
+			},
+			exitProject() {
+				this.sharedStore.exitProject();
 			}
 		}
 	}
@@ -187,5 +193,12 @@
 		margin-bottom: 50px;
 		background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0ic3F1aWdnbGUtc3JjIiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMjAgMTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDM5LjEgKDMxNzIwKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPHBhdGggZD0iTTAsMTAgQzYsMTAgNCwwIDEwLDAgQzE2LDAgMTUsMTAgMjAsMTAiIGlkPSJQYXRoLTMtQ29weS0xMyIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiPjwvcGF0aD4KPC9zdmc+");
 		background-position: center;
+	}
+
+	.close {
+		width: 100px;
+		height: 100px;
+		padding: 30px;
+		cursor: pointer;
 	}
 </style>
