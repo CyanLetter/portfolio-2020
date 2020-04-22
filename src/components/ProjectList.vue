@@ -1,8 +1,8 @@
 <template>
 	<section id="project-list" ref="project-list" :class="[{ 'fade-out': this.sharedStore.state.viewingProject }]">
-		<ul>
+		<ul v-on:click="enterProject">
 			<li class="project-list-item" v-for="project in projects" :key="project.title">
-				<h2 v-on:click="enterProject" :tabindex="focusable" role="button">
+				<h2 :tabindex="focusable" role="button">
 					{{project.title}}
 				</h2>
 				<h3>
@@ -146,6 +146,7 @@
 		letter-spacing: 0.2rem;
 		margin-left: 0.25rem;
 		mix-blend-mode: overlay;
+		cursor: pointer;
 
 		@include breakpoint($bp-med) {
 			font-size: 1.5rem;
