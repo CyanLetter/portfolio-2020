@@ -8,7 +8,7 @@
 			"color2" : "#09d5df",
 			"angle" : "10"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Winter Wonderland",
@@ -78,7 +78,7 @@
 			"color2" : "#22bb53",
 			"angle" : "20"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Play and Learn",
@@ -111,7 +111,7 @@
 			"color2" : "#ddd100",
 			"angle" : "-18"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Making Muppets Dance",
@@ -144,7 +144,7 @@
 			"color2" : "#0dac20",
 			"angle" : "8"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Dinosaurs and Trains",
@@ -173,7 +173,7 @@
 			"color2" : "#270091",
 			"angle" : "-10"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Get Rekt!",
@@ -206,7 +206,7 @@
 			"color2" : "#7800dd",
 			"angle" : "15"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "Virtual Vignettes",
@@ -239,7 +239,7 @@
 			"color2" : "#e6de16",
 			"angle" : "-20"
 		},
-		"articleColor" : "#2f2f2f",
+		"articleColor" : "#545454",
 		"articleContent": [
 			{
 				"title" : "All the Small Things",

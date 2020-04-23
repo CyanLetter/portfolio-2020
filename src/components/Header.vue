@@ -1,6 +1,11 @@
 <template>
 	<header>
-		<inline-svg :src="closeSvg" :class="['close', { active: this.sharedStore.state.viewingProject }]" v-on:click="exitProject" :tabindex="focusable" role="button"></inline-svg>
+		<inline-svg :src="closeSvg" :class="[
+			'close', 
+			{ 
+				active: this.sharedStore.state.viewingProject && $route.path !== '/about'
+			}
+		]" v-on:click="exitProject" :tabindex="focusable" role="button"></inline-svg>
 		<div :class="[
 			'squiggle', 
 			{ 
