@@ -35,6 +35,7 @@
 	html, body {
 		height: 100%;
 		background: #000;
+		margin: 0;
 	}
 
 	body {

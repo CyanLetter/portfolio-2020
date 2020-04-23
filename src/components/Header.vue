@@ -1,7 +1,13 @@
 <template>
 	<header>
 		<inline-svg :src="closeSvg" :class="['close', { active: this.sharedStore.state.viewingProject }]" v-on:click="exitProject" :tabindex="focusable" role="button"></inline-svg>
-		<div :class="['squiggle', { shrink: this.sharedStore.state.viewingProject }]"></div>
+		<div :class="[
+			'squiggle', 
+			{ 
+				shrink: this.sharedStore.state.viewingProject,
+				'shrink-about': $route.path == '/about'
+			}
+		]"></div>
 		<nav>
 			<router-link to="/">Work</router-link>
 			<router-link to="/about">About</router-link>
@@ -122,6 +128,10 @@
 		}
 
 		&.shrink {
+			width: 0px;
+		}
+
+		&.shrink-about {
 			width: 0px;
 		}
 	}
