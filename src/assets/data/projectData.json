@@ -12,23 +12,23 @@
 		"articleContent": [
 			{
 				"title" : "Winter Wonderland",
-				"body" : "Part of Santa's Fantastical"
+				"body" : "Santa's Fantastical is an immersive holiday experience, featuring multiple interactive touchpoints and games. Experience everything from soaring auroras to virtual snowball fights."
 			},
 			{
 				"title" : "Depth Sensing",
-				"body" : "Built in Unity, using RealSense cameras for tracking"
+				"body" : "These experiences are built in Unity, and driven by Intel RealSense depth cameras. These cameras were used to track the silhouettes of guests and objects, translating the real world into particle systems and virtual physics objects."
 			},
 			{
 				"title" : "Yeti Tracks",
-				"body" : "Tracking small, high velocity objects, and translating from real world to 3D space and back again"
+				"body" : "Tracking small, white snowballs against a snowy landscape presented some unique challenges, especially when you add high velocity into the mix. Through multiple iterations of different tracking techniques, the experience achieved accuracy and reliability for over a dozen simultaneous guests."
 			},
 			{
 				"title" : "Particles Galore",
-				"body" : "Unity's Visual Effect Graph"
+				"body" : "Unity's visual effect graph drives the realtime effects in these experiences, allowing for beautiful visual landscapes of millions of particles with relatively low overhead."
 			},
 			{
 				"title" : "Role",
-				"body" : "Lead developer, VFX designer"
+				"body" : "I was the lead developer, handling the programming and realtime visual effects for the aurora, slide, and snowball fight experiences. I also worked on-site during testing and installation to ensure things got up and running smoothly."
 			}
 		]
 	},
@@ -45,7 +45,7 @@
 		"articleContent" : [
 			{
 				"title" : "An Interactive Museum Exhibit",
-				"body" : "Word Play was an interactive installation spanning a 40ft section of wall at the Museum of Design Atlanta. Visitors who walked through the center of the room were rewarded with the chance to fling ribbons of text across the gallery walls, streams of text acting as extensions of their hands. When idle, the blue text crawling slowly along the wall added colorful amience to the dim gallery.",
+				"body" : "Word Play was an interactive installation spanning a 40ft section of wall at the Museum of Design Atlanta. Visitors who walked through the center of the room were rewarded with the chance to fling ribbons of text across the gallery walls, streams of text acting as extensions of their hands. When idle, the blue text crawling slowly along the wall added colorful ambiance to the dim gallery.",
 				"link" : {
 					"title" : "View the project on primalscreen.com",
 					"url" : "https://www.primalscreen.com/project/moda-wordplay"
@@ -82,7 +82,7 @@
 		"articleContent": [
 			{
 				"title" : "Play and Learn",
-				"body" : "",
+				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters.",
 				"link" : {
 					"title" : "Download the app",
 					"url" : "https://pbskids.org/apps/play-and-learn-science-.html"
@@ -90,15 +90,15 @@
 			},
 			{
 				"title" : "Award Winning",
-				"body" : ""
+				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
 			},
 			{
 				"title" : "Light and Water",
-				"body" : ""
+				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, creating satisfying fluid movement that runs smoothly on low end mobile devices presented it's own challenge."
 			},
 			{
 				"title" : "Role",
-				"body" : "Lead Developer"
+				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
 			}
 		]
 	},
@@ -115,7 +115,7 @@
 		"articleContent": [
 			{
 				"title" : "Making Muppets Dance",
-				"body" : "",
+				"body" : "Across many years, I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos.",
 				"link" : {
 					"title" : "Play them all on sesamestreet.org",
 					"url" : "https://www.sesamestreet.org/games"
@@ -123,15 +123,15 @@
 			},
 			{
 				"title" : "Web Games for All",
-				"body" : "Hitting performance benchmarks"
+				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed to provide the best experience even on older browsers and devices."
 			},
 			{
 				"title" : "Endless Engines",
-				"body" : "Pixi and CreateJS, ports from flash"
+				"body" : "Over the years, technologies and production techniques have changed. These games have been built one a wide variety of platforms to match - numerous custom engines built on Flash, CreateJS, and PixiJS."
 			}, 
 			{
 				"title" : "Role",
-				"body" : "Lead Developer on those above, support on many more."
+				"body" : "I have been the lead developer on many of these games and the frameworks behind them, and provided support and direction on many more."
 			}
 		]
 	},
@@ -148,19 +148,19 @@
 		"articleContent": [
 			{
 				"title" : "Dinosaurs and Trains",
-				"body" : "",
+				"body" : "Could there be a better combination of things? This set of web-based games for The Jim Henson Company follows the various adventures of Buddy the T-Rex",
 				"link" : {
 					"title" : "Play the games on pbskids.org",
 					"url" : "https://pbskids.org/dinosaurtrain/games/"
 				}
 			},
 			{
-				"title" : "Figure Something Out",
-				"body" : "???"
+				"title" : "Highly Engaging",
+				"body" : "Fun, sticky gameplay was the priority here, and it shows with high engagement rates on both the show's website and in the PBS Kids games app."
 			},
 			{
 				"title" : "Role",
-				"body" : "Lead Developer"
+				"body" : "I was the lead developer on Buddy's Campout Adventure, and provided direction and support on both Dino Car Designer and Dino Flight"
 			}
 		]
 	},
@@ -177,23 +177,23 @@
 		"articleContent": [
 			{
 				"title" : "Get Rekt!",
-				"body" : "VR Arcade, indie made",
+				"body" : "Mega Spacehole is a virtual reality arcade game, filled with dozens of blowing things up with your face - no controller needed.",
 				"link" : {
-					"title" : "Is GearVR still a thing?",
+					"title" : "Play the game on GearVR",
 					"url" : "https://www.oculus.com/experiences/gear-vr/1056447741054271/"
 				}
 			},
 			{
-				"title" : "Early Adopter",
-				"body" : "Gear VR, released soon after hardware"
+				"title" : "Early Adopters",
+				"body" : "Released in early 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the early days of the platform."
 			},
 			{
 				"title" : "Around the World",
-				"body" : "Licensed overseas"
+				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully deploying on platforms and markets across the Pacific."
 			},
 			{
 				"title" : "Role",
-				"body" : "Lead Developer"
+				"body" : "I was the developer half of the two man team behind this. Developed on nights and weekends, it was an exhausting but rewarding labor of love."
 			}
 		]
 	},
@@ -210,7 +210,7 @@
 		"articleContent": [
 			{
 				"title" : "Virtual Vignettes",
-				"body" : "",
+				"body" : "VR Village is a small series of seasonal lands, developed alongside a custom-printed Cardboard VR viewer.",
 				"link" : {
 					"title" : "Download the app",
 					"url" : "http://primal-scope.com/"
@@ -218,15 +218,15 @@
 			},
 			{
 				"title" : "Timely Delivery",
-				"body" : "Multiple moving parts, from print to app"
+				"body" : "This project had multiple moving parts, from loxing down links and instructions on printed materials, to ensuring a successful app store deployment in time for the holidays. It was an effort that spanned multiple disciplines and mediums to pull off."
 			},
 			{
 				"title" : "Lean Resources",
-				"body" : "Low end devices, quick handoff from artists"
+				"body" : "In addition to a tight timeline, this experience was designed to run smoothly across all mobile device categories. Everyone involved had to adopt guidelines for hitting maximum performance."
 			},
 			{
 				"title" : "Role",
-				"body" : "Lead Developer"
+				"body" : "I was the lead developer behind both the Unity app and the webpage that hosted app links and instructions. I also worked closely with the 3D team to determine production pipelines and asset specs."
 			}
 		]
 	},
@@ -235,7 +235,7 @@
 		"client": "Personal Projects",
 		"video": "PersonalProjectMontage.mp4",
 		"gradient" : {
-			"color1" : "#e117e2",
+			"color1" : "#e217aa",
 			"color2" : "#e6de16",
 			"angle" : "-20"
 		},
