@@ -5,7 +5,7 @@
 			<div class="gradient-overlay" ref="gradient"></div>
 		</section>
 		
-		<section class="content" :style="{ background: currentArticleBackground }">
+		<section class="content" :style="{ background: currentGradient }">
 			<section v-for="item in currentArticle" :key="item.title">
 				<h3>
 					{{ item.title }}
@@ -144,6 +144,7 @@
 		>section {
 			display: flex;
 			flex-direction: column;
+			width: 100%;
 			max-width: 850px;
 			margin-bottom: 80px;
 		}

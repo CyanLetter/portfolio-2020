@@ -59,6 +59,14 @@
 				}
 			}
 		},
+		mounted() {
+			// Handle navigation oddities - reset to correct project index for scroll position and exit if project is currently being viewed
+			this.calculateProjectIndex();
+			this.sharedStore.setCurrentProject(this.scrollIndex);
+			if (this.sharedStore.state.viewingProject) {
+				this.sharedStore.exitProject();
+			}
+		},
 		created() {
 			window.addEventListener("scroll", this.calculateProjectIndex);
 			window.addEventListener("resize", this.calculateProjectIndex);
@@ -77,6 +85,7 @@
 				}
 
 				this.lastScrollPosition = document.scrollingElement.scrollTop;
+				console.log(this.lastScrollPosition);
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);

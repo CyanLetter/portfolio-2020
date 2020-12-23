@@ -10,7 +10,7 @@
 				This site was designed and developed solely by me. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. My role in each project presented here is detailed in their description.
 			</p>
 			<p>
-				Feel free to get in touch - I'm always happy to talk about creative development or trade cat pictures.
+				Feel free to get in touch at <strong><a href="mailto:hello@dakotaling.com">hello@dakotaling.com</a></strong>
 			</p>
 		</section>
 		<div class="bubble-container">
@@ -82,6 +82,15 @@
 		font-size: 1.2rem;
 		line-height: 2rem;
 		margin: 1rem 0 0;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	footer {

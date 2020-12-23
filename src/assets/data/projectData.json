@@ -29,6 +29,10 @@
 			{
 				"title" : "Role",
 				"body" : "I was the lead developer, handling the programming and realtime visual effects for the aurora, slide, and snowball fight experiences. I also worked on-site during testing and installation to ensure things got up and running smoothly."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Intel RealSense, OpenCV"
 			}
 		]
 	},
@@ -41,7 +45,7 @@
 			"color2" : "#AE236A",
 			"angle" : "-18"
 		},
-		"articleColor" : "linear-gradient(8deg, rgba(88,11,115,1) 0%, rgba(42,16,117,1) 100%)",
+		"articleColor" : "#545454",
 		"articleContent" : [
 			{
 				"title" : "An Interactive Museum Exhibit",
@@ -66,6 +70,10 @@
 			{
 				"title" : "Role",
 				"body" : "I served as the lead developer, and handled all of the programming for this project. That included typical Unity scripting, interfacing with the Kinect SDK, building the Unity scene, and making some on-the-fly changes during installation. It was the first time I have had to write code while upside-down on a ladder, and hopefully the last."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Microsoft Kinect"
 			}
 		]
 	},
@@ -99,6 +107,10 @@
 			{
 				"title" : "Role",
 				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Adobe Animate"
 			}
 		]
 	},
@@ -115,7 +127,7 @@
 		"articleContent": [
 			{
 				"title" : "Making Muppets Dance",
-				"body" : "Across many years, I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos.",
+				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos.",
 				"link" : {
 					"title" : "Play them all on sesamestreet.org",
 					"url" : "https://www.sesamestreet.org/games"
@@ -131,7 +143,11 @@
 			}, 
 			{
 				"title" : "Role",
-				"body" : "I have been the lead developer on many of these games and the frameworks behind them, and provided support and direction on many more."
+				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
 			}
 		]
 	},
@@ -161,6 +177,10 @@
 			{
 				"title" : "Role",
 				"body" : "I was the lead developer on Buddy's Campout Adventure, and provided direction and support on both Dino Car Designer and Dino Flight"
+			},
+			{
+				"title" : "Technologies",
+				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll"
 			}
 		]
 	},
@@ -194,6 +214,10 @@
 			{
 				"title" : "Role",
 				"body" : "I was the developer half of the two man team behind this. Developed on nights and weekends, it was an exhausting but rewarding labor of love."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Samsung GearVR"
 			}
 		]
 	},
@@ -227,6 +251,10 @@
 			{
 				"title" : "Role",
 				"body" : "I was the lead developer behind both the Unity app and the webpage that hosted app links and instructions. I also worked closely with the 3D team to determine production pipelines and asset specs."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Google Cardboard"
 			}
 		]
 	},
