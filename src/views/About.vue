@@ -4,10 +4,10 @@
 		<section class="about-text">
 			<h1>Hello.</h1>
 			<p>
-				I am <strong>Dakota Ling</strong>, a senior developer at Primal Screen and part time instructor at the Creative Circus. I delight in building engaging interactive experiences for all ages.
+				I am <strong>Dakota Ling</strong>, a technical director at Primal Screen and web development instructor at the Creative Circus. I delight in building engaging interactive experiences for all ages. Projects displayed here represent work I have done both independently and as part of a larger team.
 			</p>
 			<p>
-				This site was designed and developed solely by me. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. My role in each project presented here is detailed in their description.
+				I handled all aspects of this site, from concept to execution. Tools and frameworks used include Sketch, Vue, and GSAP. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. 
 			</p>
 			<p>
 				Feel free to get in touch at <strong><a href="mailto:hello@dakotaling.com">hello@dakotaling.com</a></strong>

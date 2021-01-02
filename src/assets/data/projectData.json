@@ -69,7 +69,7 @@
 			},
 			{
 				"title" : "Role",
-				"body" : "I served as the lead developer, and handled all of the programming for this project. That included typical Unity scripting, interfacing with the Kinect SDK, building the Unity scene, and making some on-the-fly changes during installation. It was the first time I have had to write code while upside-down on a ladder, and hopefully the last."
+				"body" : "I served as the lead developer, and handled all of the programming for this project. That included typical Unity scripting, interfacing with the Kinect SDK, building the Unity scene, and making some on-the-fly changes during installation. It was the first time I have had to write code while upside-down on a ladder."
 			},
 			{
 				"title" : "Technologies",
@@ -78,39 +78,39 @@
 		]
 	},
 	{
-		"title": "Science",
-		"client": "PBS Kids",
-		"video": "ScienceAppMontage.mp4",
+		"title": "Liquid",
+		"client": "Tech Demo",
+		"video": "CanvasInk_02.mp4",
 		"gradient" : {
-			"color1" : "#00bde3",
-			"color2" : "#22bb53",
-			"angle" : "20"
+			"color1" : "#03cfa0",
+			"color2" : "#0271b4",
+			"angle" : "18"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Play and Learn",
-				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters.",
-				"link" : {
-					"title" : "Download the app",
-					"url" : "https://pbskids.org/apps/play-and-learn-science-.html"
-				}
+				"title" : "Material Science",
+				"body" : "This proof of concept turns a touch screen interface into a novel tactile experience. Fluid visuals are projected onto an elastic screen material, and vibrant colors bloom under the users fingertips as they sink deeply into the screen surface."
 			},
 			{
-				"title" : "Award Winning",
-				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
-			},
-			{
-				"title" : "Light and Water",
-				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, creating satisfying fluid movement that runs smoothly on low end mobile devices presented it's own challenge."
+				"title" : "Touch Design",
+				"body" : "This project leverages TouchDesigner's powerful realtime video compositing, as well as plug and play modules for depth sensors and computer vision."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
+				"body" : "This was a solo project, I handled everything from design concept to programming and execution."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "Unity, Adobe Animate"
+				"body" : "TouchDesigner, Intel RealSense"
+			},
+			{
+				"title" : "Credits",
+				"body" : "Free HD Stock-Footage and Motion Graphics by CyberWebFX.",
+				"link" : {
+					"title" : "https://www.youtube.com/c/CyberWebFX",
+					"url" : "https://www.youtube.com/c/CyberWebFX"
+				}
 			}
 		]
 	},
@@ -152,35 +152,39 @@
 		]
 	},
 	{
-		"title": "Adventure",
-		"client": "Jim Henson",
-		"video": "DinoTrainMontage.mp4",
+		"title": "Science",
+		"client": "PBS Kids",
+		"video": "ScienceAppMontage.mp4",
 		"gradient" : {
-			"color1" : "#c7c602",
-			"color2" : "#0dac20",
-			"angle" : "8"
+			"color1" : "#00bde3",
+			"color2" : "#22bb53",
+			"angle" : "20"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Dinosaurs and Trains",
-				"body" : "Could there be a better combination of things? This set of web-based games for The Jim Henson Company follows the various adventures of Buddy the T-Rex",
+				"title" : "Play and Learn",
+				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters.",
 				"link" : {
-					"title" : "Play the games on pbskids.org",
-					"url" : "https://pbskids.org/dinosaurtrain/games/"
+					"title" : "Download the app",
+					"url" : "https://pbskids.org/apps/play-and-learn-science-.html"
 				}
 			},
 			{
-				"title" : "Highly Engaging",
-				"body" : "Fun, sticky gameplay was the priority here, and it shows with high engagement rates on both the show's website and in the PBS Kids games app."
+				"title" : "Award Winning",
+				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
+			},
+			{
+				"title" : "Light and Water",
+				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, creating satisfying fluid movement that runs smoothly on low end mobile devices presented it's own challenge."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the lead developer on Buddy's Campout Adventure, and provided direction and support on both Dino Car Designer and Dino Flight"
+				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll"
+				"body" : "Unity, Adobe Animate"
 			}
 		]
 	},
@@ -209,11 +213,11 @@
 			},
 			{
 				"title" : "Around the World",
-				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully deploying on platforms and markets across the Pacific."
+				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully deploying on additional platforms in international markets."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the developer half of the two man team behind this. Developed on nights and weekends, it was an exhausting but rewarding labor of love."
+				"body" : "I was the developer half of the two man team behind this, working many long nights and weekends to bring this indie game to market."
 			},
 			{
 				"title" : "Technologies",
@@ -228,7 +232,7 @@
 		"gradient" : {
 			"color1" : "#181838",
 			"color2" : "#7800dd",
-			"angle" : "15"
+			"angle" : "-8"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
