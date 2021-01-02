@@ -131,6 +131,7 @@
 	.gradient-overlay {
 		opacity: 0.5;
 		transition: opacity 1s;
+		pointer-events: none;
 	}
 
 	.content {

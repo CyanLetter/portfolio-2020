@@ -39,7 +39,7 @@
 		},
 		methods: {
 			svgLoaded: function() {
-				console.log("svg loaded");
+				// console.log("svg loaded");
 				this.bgLoaded = true;
 
 				this.svgDots = document.getElementById("dot-group");

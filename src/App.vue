@@ -18,7 +18,7 @@
 			}
 		},
 		mounted: function() {
-			console.log("Mounted App");
+			console.log("Hello, developer! Check out my projects on Github - https://github.com/cyanletter");
 		}
 	}
 </script>

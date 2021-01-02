@@ -85,7 +85,6 @@
 				}
 
 				this.lastScrollPosition = document.scrollingElement.scrollTop;
-				console.log(this.lastScrollPosition);
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);

@@ -1,6 +1,6 @@
 export class SimpleStore {
 	constructor() {
-		this.debug = true;
+		this.debug = false;
 		this.state = {
 			currentProject: 0,
 			viewingProject: false
