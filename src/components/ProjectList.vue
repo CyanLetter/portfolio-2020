@@ -77,14 +77,14 @@
 		},
 		methods: {
 			calculateProjectIndex() {
-				// handle scroll flag
-				this.didScroll = true;
-
 				if (this.sharedStore.state.viewingProject) {
 					return;
 				}
 
 				this.lastScrollPosition = document.scrollingElement.scrollTop;
+				// handle scroll flag
+				this.didScroll = this.lastScrollPosition > 0;
+
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);
@@ -171,7 +171,15 @@
 		height: 100px;
 		padding: 30px;
 		transition: 0.3s;
+		border: none;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
+
+		&:active {
+			transition: 0.05s;
+			transform: translateX(-50%) scale(0.9);
+		}
 
 		&.fade-out {
 			opacity: 0;
