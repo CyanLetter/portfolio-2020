@@ -201,6 +201,15 @@
 		width: 100px;
 		height: 100px;
 		padding: 30px;
+		transition: 0.3s;
+		border: none;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
 		cursor: pointer;
+
+		&:active {
+			transition: 0.05s;
+			transform: scale(0.9);
+		}
 	}
 </style>
