@@ -23,6 +23,7 @@
 				bgLoaded: false,
 				svgDots: null,
 				svgNumbers: null,
+				svgNumContainer: null,
 				projects: projectData
 			}
 		},
@@ -45,6 +46,7 @@
 
 				this.svgDots = document.getElementById("dot-group");
 				this.svgNumbers = document.getElementsByClassName("svg-number");
+				this.svgNumContainer = document.getElementById("svg-num-container");
 
 				document.getElementById("svg-bg").addEventListener("click", () => {
 					this.cycleProject();
@@ -70,31 +72,29 @@
 			setNumberScale() {
 				let dWidth = document.body.clientWidth;
 				let dHeight = document.body.clientHeight;
-				this.svgNumbers.forEach( num => {
-					let scale = 1;
 
-					var nWidth = num.viewBox.baseVal.width;
-					var nHeight = num.viewBox.baseVal.height;
-					var offset = 30;
+				let scale = 1;
+				var nWidth = this.svgNumContainer.viewBox.baseVal.width;
+				var nHeight = this.svgNumContainer.viewBox.baseVal.height;
+				var offset = 30;
 
-					if (dWidth > dHeight) {
-						// landscape
-						scale = dHeight / nHeight;
-						num.setAttribute("width", nWidth * scale);
-						num.setAttribute("height", nHeight * scale);
+				if (dWidth > dHeight) {
+					// landscape
+					scale = dHeight / nHeight;
+					this.svgNumContainer.setAttribute("width", nWidth * scale);
+					this.svgNumContainer.setAttribute("height", nHeight * scale);
 
-						num.setAttribute("x", dWidth - (nWidth*scale) + (offset * scale));
-						num.setAttribute("y", 0 + (offset * scale));
-					} else {
-						// portrait
-						scale = dWidth / nWidth;
-						num.setAttribute("width", nWidth * scale);
-						num.setAttribute("height", nHeight * scale);
+					this.svgNumContainer.setAttribute("x", dWidth - (nWidth*scale) + (offset * scale));
+					this.svgNumContainer.setAttribute("y", 0 + (offset * scale));
+				} else {
+					// portrait
+					scale = dWidth / nWidth;
+					this.svgNumContainer.setAttribute("width", nWidth * scale);
+					this.svgNumContainer.setAttribute("height", nHeight * scale);
 
-						num.setAttribute("x", 0 + (offset * scale));
-						num.setAttribute("y", dHeight - (nHeight*scale) + (offset * scale));
-					}
-				});
+					this.svgNumContainer.setAttribute("x", 0 + (offset * scale));
+					this.svgNumContainer.setAttribute("y", dHeight - (nHeight*scale) + (offset * scale));
+				}
 			},
 			setNumberForCurrentProject() {
 				if (!this.bgLoaded) {
@@ -102,9 +102,12 @@
 				}
 				for (let i = 0; i < this.svgNumbers.length; i++) {
 					if (i === this.sharedStore.state.currentProject) {
+						this.svgNumbers[i].classList.remove("inactive");
 						this.svgNumbers[i].classList.add("active");
-					} else {
+					} else if (this.svgNumbers[i].classList.contains("active")) {
 						this.svgNumbers[i].classList.remove("active");
+					} else {
+						this.svgNumbers[i].classList.add("inactive");
 					}
 				}
 			},
@@ -163,6 +166,10 @@
 		&.active {
 			opacity: 1;
 			transition-timing-function: ease-out;
+		}
+
+		&.inactive {
+			visibility: hidden;
 		}
 	}
 </style>
