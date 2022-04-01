@@ -100,13 +100,14 @@
 				this.sharedStore.enterProject();
 			},
 			scrollProjects() {
-				TweenMax.to(document.scrollingElement, 0.5, {
-					scrollTop: document.scrollingElement.scrollTop + document.body.clientHeight
-				});
+				if (this.scrollIndex < this.projects.length) {
+					this.scrollToProject(this.scrollIndex + 1);
+				}
 			},
 			scrollToProject(index) {
+				let itemHeight = document.querySelector(".project-list-item").clientHeight;
 				TweenMax.to(document.scrollingElement, 0.5, {
-					scrollTop: document.body.clientHeight * index
+					scrollTop: itemHeight * index
 				});
 			}
 		}
