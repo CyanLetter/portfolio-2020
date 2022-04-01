@@ -21,6 +21,7 @@
 	import projectData from '../assets/data/projectData.json';
 	import TweenMax from 'gsap';
 	import InlineSvg from 'vue-inline-svg';
+	import _ from 'lodash';
 
 	export default {
 		name: 'ProjectList',
@@ -71,14 +72,17 @@
 			}
 		},
 		created() {
-			window.addEventListener("scroll", this.calculateProjectIndex);
-			window.addEventListener("resize", this.calculateProjectIndex);
+			window.addEventListener("scroll", this.debouncedCalculateProjectIndex);
+			window.addEventListener("resize", this.debouncedCalculateProjectIndex);
 		},
 		destroyed() {
-			window.removeEventListener("scroll", this.calculateProjectIndex);
-			window.removeEventListener("resize", this.calculateProjectIndex);
+			window.removeEventListener("scroll", this.debouncedCalculateProjectIndex);
+			window.removeEventListener("resize", this.debouncedCalculateProjectIndex);
 		},
 		methods: {
+			debouncedCalculateProjectIndex: _.debounce(function() {
+				this.calculateProjectIndex();
+			}, 200),
 			calculateProjectIndex() {
 				if (this.sharedStore.state.viewingProject) {
 					return;

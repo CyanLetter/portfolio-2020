@@ -5,6 +5,7 @@
 <script>
 	import InlineSvg from 'vue-inline-svg';
 	import TweenMax from 'gsap';
+	import _ from 'lodash';
 	import projectData from '../assets/data/projectData.json';
 
 	export default {
@@ -32,10 +33,10 @@
 			}
 		},
 		created() {
-			window.addEventListener("resize", this.onResize);
+			window.addEventListener("resize", this.debouncedOnResize);
 		},
 		destroyed() {
-			window.removeEventListener("resize", this.onResize);
+			window.removeEventListener("resize", this.debouncedOnResize);
 		},
 		methods: {
 			svgLoaded: function() {
@@ -53,6 +54,9 @@
 				this.setNumberForCurrentProject();
 				this.changeGradient();
 			},
+			debouncedOnResize: _.debounce(function() {
+				this.onResize();
+			}, 50),
 			onResize() {
 				if (!this.bgLoaded) {
 					return;
