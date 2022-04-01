@@ -10,7 +10,7 @@
 				</h3>
 			</li>
 		</ul>
-		<inline-svg :src="scrollSvg" :class="['scroll-arrow', { 'fade-out': this.didScroll }]" v-on:click="scrollProjects" :tabindex="focusable" role="button"></inline-svg>
+		<inline-svg :src="scrollSvg" :class="['scroll-arrow', { 'fade-out': this.reachedLastProject }]" v-on:click="scrollProjects" :tabindex="focusable" role="button"></inline-svg>
 	</section>
 </template>
 
@@ -31,7 +31,7 @@
 				scrollSvg: require('../assets/svg/ScrollDownButton.svg'),
 				scrollIndex: 0,
 				lastScrollPosition: 0,
-				didScroll: false
+				reachedLastProject: false
 			}
 		},
 		computed: {
@@ -82,18 +82,18 @@
 				}
 
 				this.lastScrollPosition = document.scrollingElement.scrollTop;
-				// handle scroll flag
-				this.didScroll = this.lastScrollPosition > 0;
 
 				let heightOffset = document.body.clientHeight * 0.5;
 				let scrollRatio = (window.scrollY + heightOffset) / this.$refs["project-list"].scrollHeight;
 				this.scrollIndex = Math.floor(scrollRatio * this.projects.length);
+
+				this.reachedLastProject = this.scrollIndex + 1 >= this.projects.length;
 			},
 			enterProject() {
 				this.sharedStore.enterProject();
 			},
 			scrollProjects() {
-				TweenMax.to(document.scrollingElement, 1, {
+				TweenMax.to(document.scrollingElement, 0.5, {
 					scrollTop: document.scrollingElement.scrollTop + document.body.clientHeight
 				});
 			}
