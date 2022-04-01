@@ -1,11 +1,11 @@
 <template>
-	<article :class="['project-content', { 'active': this.sharedStore.state.viewingProject }]">
+	<article :class="['project-content', { 'active': this.sharedStore.state.viewingProject }]" :style="{ background: currentGradient }">
 		<section class="video-container">
-			<video autoplay muted loop playsinline :src="this.currentVideo"></video>
+			<video autoplay muted loop playsinline :src="this.activeVideo" :class="[{ 'fadeOut': this.changingVideo }]" v-on:canplay="videoLoaded"></video>
 			<div class="gradient-overlay" ref="gradient"></div>
 		</section>
 		
-		<section class="content" :style="{ background: currentGradient }">
+		<section class="content">
 			<section v-for="item in currentArticle" :key="item.title">
 				<h3>
 					{{ item.title }}
@@ -36,16 +36,20 @@
 			return {
 				projects: projectData,
 				sharedStore: window.store,
+				activeVideo: "",
+				changingVideo: false,
 				closeSvg: require('../assets/svg/CloseButton.svg')
 			}
 		},
 		watch: {
 			"sharedStore.state.currentProject": function() {
 				this.changeGradient();
+				this.changeVideo();
 			}
 		},
 		mounted() {
 			this.changeGradient();
+			this.changeVideo();
 		},
 		computed: {
 			currentVideo() {
@@ -67,6 +71,17 @@
 				TweenMax.to(this.$refs["gradient"], 0.5, {
 					background: this.currentGradient
 				});
+			},
+			changeVideo() {
+				this.changingVideo = true;
+
+				TweenMax.delayedCall(0.4, () => {
+					this.activeVideo = this.currentVideo;
+					// will fade back in once new video src can play
+				});
+			},
+			videoLoaded() {
+				this.changingVideo = false;
 			},
 			exitProject() {
 				this.sharedStore.exitProject();
@@ -126,6 +141,12 @@
 
 	video {
 		object-fit: cover;
+
+		transition: 0.4s;
+
+		&.fadeOut {
+			opacity: 0;
+		}
 	}
 
 	.gradient-overlay {
@@ -135,7 +156,6 @@
 	}
 
 	.content {
-		background: red;
 		padding: 40px 30px;
 		display: flex;
 		flex-direction: column;
