@@ -10,6 +10,9 @@
 				</h3>
 			</li>
 		</ul>
+		<ul class="project-dots">
+			<li :class="['project-dot', { 'filled': index == scrollIndex }]" v-for="(project, index) in projects" :key="project.title + index" v-on:click="scrollToProject(index)"></li>
+		</ul>
 		<inline-svg :src="scrollSvg" :class="['scroll-arrow', { 'fade-out': this.reachedLastProject }]" v-on:click="scrollProjects" :tabindex="focusable" role="button"></inline-svg>
 	</section>
 </template>
@@ -96,6 +99,11 @@
 				TweenMax.to(document.scrollingElement, 0.5, {
 					scrollTop: document.scrollingElement.scrollTop + document.body.clientHeight
 				});
+			},
+			scrollToProject(index) {
+				TweenMax.to(document.scrollingElement, 0.5, {
+					scrollTop: document.body.clientHeight * index
+				});
 			}
 		}
 	}
@@ -124,7 +132,7 @@
 		color: white;
 
 		@include breakpoint($bp-med) {
-			padding-left: 10vh;
+			padding-left: 100px;
 		}
 	}
 
@@ -159,6 +167,55 @@
 		@include breakpoint($bp-med) {
 			font-size: 1.5rem;
 			margin-left: 0.6rem;
+		}
+	}
+
+	.project-dots {
+		position: fixed;
+		bottom: 50px;
+		right: 0;
+		// top: 50%;
+		// transform: translateY(-50%);
+
+		.project-dot {
+			position: relative;
+			width: 60px;
+			height: 30px;
+			cursor: pointer;
+
+			&:after {
+				content: '';
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border: 2px solid white;
+				border-radius: 20px;
+				transition: 0.2s;
+			}
+
+			&.filled, &:hover {
+				&:after {
+					background: #ffffff;
+				}
+			}
+		}
+
+		@include breakpoint($bp-med) {
+			left: 0;
+			right: auto;
+
+			.project-dot {
+				width: 90px;
+				height: 40px;
+
+				&:after {
+					width: 15px;
+					height: 15px;
+				}
+			}
 		}
 	}
 
