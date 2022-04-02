@@ -4,7 +4,7 @@
 		<section class="about-text">
 			<h1>Hello.</h1>
 			<p>
-				I am <strong>Dakota Ling</strong>, a technical director at Primal Screen and web development instructor at the Creative Circus. I delight in building engaging interactive experiences for all ages. Projects displayed here represent work I have done both independently and as part of a larger team.
+				I am <strong>Dakota Ling</strong>, a technical director at Primal Screen and web development instructor at the Creative Circus. I have been working as a creative software developer for over 8 years, building engaging interactive experiences for all ages. Projects displayed here represent work I have done both independently and as part of a larger team.
 			</p>
 			<p>
 				I handled all aspects of this site, from concept to execution. Tools and frameworks used include Sketch, Vue, and GSAP. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. 
