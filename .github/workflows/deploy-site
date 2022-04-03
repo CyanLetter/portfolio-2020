@@ -1,0 +1,39 @@
+name: deploy-site
+on: 
+  push:
+    branches:
+      # Only deploy when pushing to master branch
+      - master
+      # Also include this test branch for now
+      - feature/actions-deploy
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Testing Actions'
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Standard github action to check out repository
+      - uses: actions/checkout@v2
+      # Set up Node environment
+      - run: echo 'Starting build...'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '10.13.0'
+      # Install packages
+      - run: yarn install
+      # Run vue CLI build
+      - run: yarn run build
+      # rsync to server
+      - run: echo 'Starting deploy...'
+      - name: rsync deploy
+        uses: burnett01/rsync-deployments@5.2
+        with: 
+          switches: -avzr --delete --exclude="" --include="" --filter=""
+          path: dist/
+          remote_path: /var/www/deploy_test/
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - run: echo 'Done'
