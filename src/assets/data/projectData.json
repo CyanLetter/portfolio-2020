@@ -127,11 +127,7 @@
 		"articleContent": [
 			{
 				"title" : "Making Muppets Dance",
-				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos.",
-				"link" : {
-					"title" : "Play them all on sesamestreet.org",
-					"url" : "https://www.sesamestreet.org/games"
-				}
+				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos."
 			},
 			{
 				"title" : "Web Games for All",
