@@ -7,10 +7,6 @@ on:
       # Also include this test branch for now
       - feature/actions-deploy
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo 'Testing Actions'
   deploy:
     runs-on: ubuntu-latest
     steps:
