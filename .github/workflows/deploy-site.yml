@@ -4,8 +4,6 @@ on:
     branches:
       # Only deploy when pushing to master branch
       - master
-      # Also include this test branch for now
-      - feature/actions-deploy
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,7 +25,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SOURCE: dist/
-          TARGET: /var/www/deploy_test/
+          TARGET: /var/www/dakotaling.com/public_html
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: ${{ secrets.DEPLOY_USER }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
