@@ -2,6 +2,7 @@
 	{
 		"title": "Fantastical",
 		"client": "Fantastica Labs",
+		"type" : "Installation",
 		"video": "FantasticalMontage.mp4",
 		"gradient" : {
 			"color1" : "#04138f",
@@ -39,6 +40,7 @@
 	{
 		"title": "Word Play",
 		"client": "MODA",
+		"type" : "Installation",
 		"video": "WordPlayMontage_01_720.mp4",
 		"gradient" : {
 			"color1" : "#3812A0",
@@ -80,6 +82,7 @@
 	{
 		"title": "Liquid",
 		"client": "Tech Demo",
+		"type" : "Installation",
 		"video": "CanvasInk_02.mp4",
 		"gradient" : {
 			"color1" : "#03cfa0",
@@ -117,6 +120,7 @@
 	{
 		"title": "Street",
 		"client": "Sesame Workshop",
+		"type" : "Web Games",
 		"video": "SesameMontage.mp4",
 		"gradient" : {
 			"color1" : "#980909",
@@ -150,6 +154,7 @@
 	{
 		"title": "Science",
 		"client": "PBS Kids",
+		"type" : "Mobile App",
 		"video": "ScienceAppMontage.mp4",
 		"gradient" : {
 			"color1" : "#00bde3",
@@ -187,6 +192,7 @@
 	{
 		"title": "Rights",
 		"client": "US Civil Rights Trail",
+		"type" : "AR Web App",
 		"video": "USCRTMontage.mp4",
 		"gradient" : {
 			"color1" : "#590094",
@@ -224,6 +230,7 @@
 	{
 		"title": "Spacehole",
 		"client": "Furious Union",
+		"type" : "VR Game",
 		"video": "MegaSpacehole_720.mp4",
 		"gradient" : {
 			"color1" : "#c93600",
@@ -261,6 +268,7 @@
 	{
 		"title": "Wayfinding",
 		"client": "Atlanta History Center",
+		"type" : "Web App",
 		"video": "AHCMontage.mp4",
 		"gradient" : {
 			"color1" : "#007900",
@@ -298,6 +306,7 @@
 	{
 		"title": "Ephemera",
 		"client": "Personal Projects",
+		"type" : "Personal Projects",
 		"video": "PersonalProjectMontage.mp4",
 		"gradient" : {
 			"color1" : "#e217aa",

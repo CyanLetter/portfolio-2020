@@ -6,7 +6,7 @@
 					{{project.title}}
 				</h2>
 				<h3>
-					{{project.client}}
+					{{project.type}}
 				</h3>
 			</li>
 		</ul>
