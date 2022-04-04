@@ -13,15 +13,15 @@
 		"articleContent": [
 			{
 				"title" : "Winter Wonderland",
-				"body" : "Santa's Fantastical is an immersive holiday experience, featuring multiple interactive touchpoints and games. Experience everything from soaring auroras to virtual snowball fights."
+				"body" : "Santa's Fantastical is an immersive holiday experience, featuring multiple installations and games within a maze of indoor spaces. I worked on a portion of the interactive activations, from soaring auroras to virtual snowball fights."
 			},
 			{
 				"title" : "Depth Sensing",
-				"body" : "These experiences are built in Unity, and driven by Intel RealSense depth cameras. These cameras were used to track the silhouettes of guests and objects, translating the real world into particle systems and virtual physics objects."
+				"body" : "These experiences are built in Unity, and driven by Intel RealSense depth cameras. These cameras were used to track the positions of guests and objects, translating the real world into particle systems and virtual physics objects."
 			},
 			{
 				"title" : "Yeti Tracks",
-				"body" : "Tracking small, white snowballs against a snowy landscape presented some unique challenges, especially when you add high velocity into the mix. Through multiple iterations of different tracking techniques, the experience achieved accuracy and reliability for over a dozen simultaneous guests."
+				"body" : "Tracking small, white snowballs against a winter landscape presented some unique challenges, especially when you add high velocity into the mix. Through multiple iterations of different tracking techniques, the experience achieved accuracy and reliability for over a dozen simultaneous guests."
 			},
 			{
 				"title" : "Particles Galore",
@@ -131,11 +131,11 @@
 		"articleContent": [
 			{
 				"title" : "Making Muppets Dance",
-				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to helping Oscar the Grouch muck up some tuxedos."
+				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to flinging garbage onto an endless series of suits for Oscar the Grouch."
 			},
 			{
 				"title" : "Web Games for All",
-				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed to provide the best experience even on older browsers and devices."
+				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed for optimal performance across older browsers and devices."
 			},
 			{
 				"title" : "Endless Engines",
@@ -143,7 +143,7 @@
 			}, 
 			{
 				"title" : "Role",
-				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
+				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, Reuse and Reinvent, Ramp Racers, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
 			},
 			{
 				"title" : "Technologies",
@@ -177,7 +177,7 @@
 			},
 			{
 				"title" : "Light and Water",
-				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, creating satisfying fluid movement that runs smoothly on low end mobile devices presented it's own challenge."
+				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, simulating smooth fluid dynamics on low end mobile devices presented it's own fun challenge."
 			},
 			{
 				"title" : "Role",
@@ -203,23 +203,23 @@
 		"articleContent": [
 			{
 				"title" : "Augmented Reality",
-				"body" : "",
+				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience.",
 				"link" : {
 					"title" : "Share the Journey",
 					"url" : "https://civilrightstrail.com/book-landing-page/"
 				}
 			},
 			{
-				"title" : "Catching Up",
-				"body" : "Lorem Ipsum, book was already in print, had to adapt to late findings such as page curls and glossiness"
+				"title" : "Markerless",
+				"body" : "There was one major catch when this project kicked off - the physical book was already going to print. This meant the AR experience had to work off of existing pages, with no additional markers to assist with tracking and activation. As an added challenge, we also needed an affordable web-based solution to keep the barrier to entry low. With a bit of research and light modification, we ultimately settled on the open source AR.js library."
 			},
 			{
 				"title" : "Remote Benefits",
-				"body" : "Different lighting conditions in homes, delivered updates for review and QA"
+				"body" : "Working remotely during this project offered some unexpected benefits. Throughout the development process, the web app received incidental testing across a wide variety lighting conditions and devices, as collaborators had to review content in their own homes. This helped catch issues with glare, page curl affecting tracking, and first-time user experience. The resulting product benefited from these findings, and helped inform future AR activations."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the lead developer, handling the majority of the programming, as well as framework modifications and testing."
+				"body" : "I was the lead developer, handling the majority of the programming, image training, framework modifications, and testing."
 			},
 			{
 				"title" : "Technologies",
@@ -249,11 +249,11 @@
 			},
 			{
 				"title" : "Early Adopters",
-				"body" : "Released in early 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the early days of the platform."
+				"body" : "Released in 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the fledgling days of the platform."
 			},
 			{
 				"title" : "Around the World",
-				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully deploying on additional platforms in international markets."
+				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully launching in international markets across a broad range of platforms."
 			},
 			{
 				"title" : "Role",
@@ -279,19 +279,23 @@
 		"articleContent": [
 			{
 				"title" : "Finding a Way",
-				"body" : "",
+				"body" : "This interactive map provides information and directions to visitors at the Atlanta History Center. It was intended for both kiosks and mobile devices, and included a dedicated event map in the parking deck.",
 				"link" : {
 					"title" : "See it in action",
 					"url" : "https://wayfinding.atlantahistorycenter.com/"
 				}
 			},
 			{
-				"title" : "Temporary",
-				"body" : "Lorem Ipsum, we made kiosk screens, event pathfinding, and a mobile version. CMS had to be plug-and-play on existing infrastructure, thus sqlite"
+				"title" : "Infrastructure",
+				"body" : "The project itself came with a few constraints. Ideally the map would work on existing infrastructure, and be simple to deploy and migrate. The kiosk screens shouldn't require any new software subscriptions or proprietary hardware. It needed an easy-to-use CMS, so employees could update the event display daily. We settled on a Vue-based front end, and a CMS driven by PHP and SQLite."
 			},
 			{
-				"title" : "Adaptive",
-				"body" : "Lorem Ipsum, Covid messed things up, added localization later"
+				"title" : "Accessible Information",
+				"body" : "The map is as informative as it is utilitarian, designed to help guests learn about exhibits and locations they may otherwise miss. It also included practical information on parking, wheelchair accessible paths, and ticketing. Following a successful launch, we also added localization for multiple languages, to better serve all visitors."
+			},
+			{
+				"title" : "A Convoluted Path",
+				"body" : "There were some bumps along the way - namely, a global pandemic, which required a quick pivot on the project deliverables. The mobile version of the map took priority, and more emphasis was placed on the outdoor areas. We added an information window, to provide easily editable messaging on ever-changing restrictions and mask mandates. "
 			},
 			{
 				"title" : "Role",
