@@ -166,8 +166,8 @@
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			max-width: 850px;
-			margin-bottom: 80px;
+			max-width: 960px;
+			margin-bottom: 30px;
 		}
 
 		h3 {
