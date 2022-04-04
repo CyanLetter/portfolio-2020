@@ -185,6 +185,43 @@
 		]
 	},
 	{
+		"title": "Rights",
+		"client": "US Civil Rights Trail",
+		"video": "USCRTMontage.mp4",
+		"gradient" : {
+			"color1" : "#590094",
+			"color2" : "#ff9e15",
+			"angle" : "8"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Augmented Reality",
+				"body" : "",
+				"link" : {
+					"title" : "Share the Journey",
+					"url" : "https://civilrightstrail.com/book-landing-page/"
+				}
+			},
+			{
+				"title" : "Catching Up",
+				"body" : "Lorem Ipsum, book was already in print, had to adapt to late findings such as page curls and glossiness"
+			},
+			{
+				"title" : "Remote Benefits",
+				"body" : "Different lighting conditions in homes, delivered updates for review and QA"
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the lead developer, handling the majority of the programming, as well as framework modifications and testing."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "WebGL, A-Frame, AR.js"
+			}
+		]
+	},
+	{
 		"title": "Spacehole",
 		"client": "Furious Union",
 		"video": "MegaSpacehole_720.mp4",
@@ -222,39 +259,39 @@
 		]
 	},
 	{
-		"title": "Village",
-		"client": "Primal Screen",
-		"video": "VRVillageMontage.mp4",
+		"title": "Wayfinding",
+		"client": "Atlanta History Center",
+		"video": "AHCMontage.mp4",
 		"gradient" : {
-			"color1" : "#181838",
-			"color2" : "#7800dd",
-			"angle" : "-8"
+			"color1" : "#007900",
+			"color2" : "#bfdf6c",
+			"angle" : "-20"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Virtual Vignettes",
-				"body" : "VR Village is a small series of seasonal lands, developed alongside a custom-printed Cardboard VR viewer.",
+				"title" : "Finding a Way",
+				"body" : "",
 				"link" : {
-					"title" : "Download the app",
-					"url" : "http://primal-scope.com/"
+					"title" : "See it in action",
+					"url" : "https://wayfinding.atlantahistorycenter.com/"
 				}
 			},
 			{
-				"title" : "Timely Delivery",
-				"body" : "This project had multiple moving parts, from loxing down links and instructions on printed materials, to ensuring a successful app store deployment in time for the holidays. It was an effort that spanned multiple disciplines and mediums to pull off."
+				"title" : "Temporary",
+				"body" : "Lorem Ipsum, we made kiosk screens, event pathfinding, and a mobile version. CMS had to be plug-and-play on existing infrastructure, thus sqlite"
 			},
 			{
-				"title" : "Lean Resources",
-				"body" : "In addition to a tight timeline, this experience was designed to run smoothly across all mobile device categories. Everyone involved had to adopt guidelines for hitting maximum performance."
+				"title" : "Adaptive",
+				"body" : "Lorem Ipsum, Covid messed things up, added localization later"
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the lead developer behind both the Unity app and the webpage that hosted app links and instructions. I also worked closely with the 3D team to determine production pipelines and asset specs."
+				"body" : "I was the lead developer, handling all aspects of the tech stack from conception to delivery. I worked closely with museum staff and our design team to determine requirements, and deliver at every stage of the project."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "Unity, Google Cardboard"
+				"body" : "Vue, CockpitCMS, Vivus"
 			}
 		]
 	},
