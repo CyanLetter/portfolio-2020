@@ -4,10 +4,10 @@
 		<section class="about-text">
 			<h1>Hello.</h1>
 			<p>
-				I am <strong>Dakota Ling</strong>, a technical director at Primal Screen and web development instructor at the Creative Circus. I have been working as a creative software developer for over 8 years, building engaging interactive experiences for all ages. Projects displayed here represent work I have done both independently and as part of a larger team.
+				I am <strong>Dakota Ling</strong>, a Senior Unity Developer at Osso VR. I have been working as a creative software developer for over 10 years, building engaging interactive experiences for platforms ranging from tiny phones to mammoth projections and virtual reality headsets.
 			</p>
 			<p>
-				I handled all aspects of this site, from concept to execution. Tools and frameworks used include Sketch, Vue, and GSAP. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. 
+				Projects displayed here represent work I have done both independently and as part of a larger team. I handled all design and development for the site itself. Tools and frameworks used include Sketch, Vue, and GSAP. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. 
 			</p>
 			<p>
 				Feel free to get in touch at <strong><a href="mailto:hello@dakotaling.com">hello@dakotaling.com</a></strong>
