@@ -20,9 +20,6 @@
 		</div>
 		<footer>
 			<!-- social component -->
-			<a href="https://twitter.com/cyanletter" target="_blank">
-				<inline-svg :src="this.twitterIcon" alt="Screaming Bird Hell Site"></inline-svg>
-			</a>
 			<a href="https://github.com/cyanletter" target="_blank">
 				<inline-svg :src="this.githubIcon" alt="The Origin of All Code"></inline-svg>
 			</a>
@@ -44,7 +41,6 @@
 		data() {
 			return {
 				sharedStore: window.store,
-				twitterIcon: require('../assets/svg/BirdHellsite.svg'),
 				githubIcon: require('../assets/svg/OriginOfAllCode.svg'),
 				linkedinIcon: require('../assets/svg/HereBeRecruiters.svg')
 			}
