@@ -1,5 +1,6 @@
 name: deploy-site
 on: 
+  workflow_dispatch:
   push:
     branches:
       # Only deploy when pushing to master branch
