@@ -38,6 +38,196 @@
 		]
 	},
 	{
+		"title": "Street",
+		"client": "Sesame Workshop",
+		"type" : "Web Games",
+		"video": "SesameMontage.mp4",
+		"gradient" : {
+			"color1" : "#980909",
+			"color2" : "#ddd100",
+			"angle" : "-18"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Making Muppets Dance",
+				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to flinging garbage onto an endless series of suits for Oscar the Grouch."
+			},
+			{
+				"title" : "Web Games for All",
+				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed for optimal performance across older browsers and devices."
+			},
+			{
+				"title" : "Endless Engines",
+				"body" : "Over the years, technologies and production techniques have changed. These games have been built one a wide variety of platforms to match - numerous custom engines built on Flash, CreateJS, and PixiJS."
+			}, 
+			{
+				"title" : "Role",
+				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, Reuse and Reinvent, Ramp Racers, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
+			}
+		]
+	},
+	{
+		"title": "Rights",
+		"client": "US Civil Rights Trail",
+		"type" : "AR Web App",
+		"video": "USCRTMontage.mp4",
+		"gradient" : {
+			"color1" : "#590094",
+			"color2" : "#ff9e15",
+			"angle" : "8"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Augmented Reality",
+				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience.",
+				"link" : {
+					"title" : "Share the Journey",
+					"url" : "https://civilrightstrail.com/book-landing-page/"
+				}
+			},
+			{
+				"title" : "Markerless",
+				"body" : "There was one major catch when this project kicked off - the physical book was already going to print. This meant the AR experience had to work off of existing pages, with no additional markers to assist with tracking and activation. As an added challenge, we also needed an affordable web-based solution to keep the barrier to entry low. With a bit of research and light modification, we ultimately settled on the open source AR.js library."
+			},
+			{
+				"title" : "Remote Benefits",
+				"body" : "Working remotely during this project offered some unexpected benefits. Throughout the development process, the web app received incidental testing across a wide variety lighting conditions and devices, as collaborators had to review content in their own homes. This helped catch issues with glare, page curl affecting tracking, and first-time user experience. The resulting product benefited from these findings, and helped inform future AR activations."
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the lead developer, handling the majority of the programming, image training, framework modifications, and testing."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "WebGL, A-Frame, AR.js"
+			}
+		]
+	},
+	{
+		"title": "Wayfinding",
+		"client": "Atlanta History Center",
+		"type" : "Web App",
+		"video": "AHCMontage.mp4",
+		"gradient" : {
+			"color1" : "#007900",
+			"color2" : "#bfdf6c",
+			"angle" : "-20"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Finding a Way",
+				"body" : "This interactive map provides information and directions to visitors at the Atlanta History Center. It was intended for both kiosks and mobile devices, and included a dedicated event map in the parking deck.",
+				"link" : {
+					"title" : "See it in action",
+					"url" : "https://wayfinding.atlantahistorycenter.com/"
+				}
+			},
+			{
+				"title" : "Infrastructure",
+				"body" : "The project itself came with a few constraints. Ideally the map would work on existing infrastructure, and be simple to deploy and migrate. The kiosk screens shouldn't require any new software subscriptions or proprietary hardware. It needed an easy-to-use CMS, so employees could update the event display daily. We settled on a Vue-based front end, and a CMS driven by PHP and SQLite."
+			},
+			{
+				"title" : "Accessible Information",
+				"body" : "The map is as informative as it is utilitarian, designed to help guests learn about exhibits and locations they may otherwise miss. It also included practical information on parking, wheelchair accessible paths, and ticketing. Following a successful launch, we also added localization for multiple languages, to better serve all visitors."
+			},
+			{
+				"title" : "A Convoluted Path",
+				"body" : "There were some bumps along the way - namely, a global pandemic, which required a quick pivot on the project deliverables. The mobile version of the map took priority, and more emphasis was placed on the outdoor areas. We added an information window, to provide easily editable messaging on ever-changing restrictions and mask mandates. "
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the lead developer, handling all aspects of the tech stack from conception to delivery. I worked closely with museum staff and our design team to determine requirements, and deliver at every stage of the project."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Vue, CockpitCMS, Vivus"
+			}
+		]
+	},
+	{
+		"title": "Science",
+		"client": "PBS Kids",
+		"type" : "Mobile App",
+		"video": "ScienceAppMontage.mp4",
+		"gradient" : {
+			"color1" : "#00bde3",
+			"color2" : "#22bb53",
+			"angle" : "20"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Play and Learn",
+				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters.",
+				"link" : {
+					"title" : "Download the app",
+					"url" : "https://pbskids.org/apps/play-and-learn-science-.html"
+				}
+			},
+			{
+				"title" : "Award Winning",
+				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
+			},
+			{
+				"title" : "Light and Water",
+				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, simulating smooth fluid dynamics on low end mobile devices presented it's own fun challenge."
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Adobe Animate"
+			}
+		]
+	},
+	{
+		"title": "Spacehole",
+		"client": "Furious Union",
+		"type" : "VR Game",
+		"video": "MegaSpacehole_720.mp4",
+		"gradient" : {
+			"color1" : "#c93600",
+			"color2" : "#270091",
+			"angle" : "-10"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Get Rekt!",
+				"body" : "Mega Spacehole is a virtual reality arcade game, filled with dozens of blowing things up with your face - no controller needed.",
+				"link" : {
+					"title" : "Play the game on GearVR",
+					"url" : "https://www.oculus.com/experiences/gear-vr/1056447741054271/"
+				}
+			},
+			{
+				"title" : "Early Adopters",
+				"body" : "Released in 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the fledgling days of the platform."
+			},
+			{
+				"title" : "Around the World",
+				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully launching in international markets across a broad range of platforms."
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the developer half of the two man team behind this, working many long nights and weekends to bring this indie game to market."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "Unity, Samsung GearVR"
+			}
+		]
+	},
+	{
 		"title": "Word Play",
 		"client": "MODA",
 		"type" : "Installation",
@@ -118,196 +308,6 @@
 		]
 	},
 	{
-		"title": "Street",
-		"client": "Sesame Workshop",
-		"type" : "Web Games",
-		"video": "SesameMontage.mp4",
-		"gradient" : {
-			"color1" : "#980909",
-			"color2" : "#ddd100",
-			"angle" : "-18"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Making Muppets Dance",
-				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to flinging garbage onto an endless series of suits for Oscar the Grouch."
-			},
-			{
-				"title" : "Web Games for All",
-				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed for optimal performance across older browsers and devices."
-			},
-			{
-				"title" : "Endless Engines",
-				"body" : "Over the years, technologies and production techniques have changed. These games have been built one a wide variety of platforms to match - numerous custom engines built on Flash, CreateJS, and PixiJS."
-			}, 
-			{
-				"title" : "Role",
-				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, Reuse and Reinvent, Ramp Racers, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
-			}
-		]
-	},
-	{
-		"title": "Science",
-		"client": "PBS Kids",
-		"type" : "Mobile App",
-		"video": "ScienceAppMontage.mp4",
-		"gradient" : {
-			"color1" : "#00bde3",
-			"color2" : "#22bb53",
-			"angle" : "20"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Play and Learn",
-				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters.",
-				"link" : {
-					"title" : "Download the app",
-					"url" : "https://pbskids.org/apps/play-and-learn-science-.html"
-				}
-			},
-			{
-				"title" : "Award Winning",
-				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
-			},
-			{
-				"title" : "Light and Water",
-				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, simulating smooth fluid dynamics on low end mobile devices presented it's own fun challenge."
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "Unity, Adobe Animate"
-			}
-		]
-	},
-	{
-		"title": "Rights",
-		"client": "US Civil Rights Trail",
-		"type" : "AR Web App",
-		"video": "USCRTMontage.mp4",
-		"gradient" : {
-			"color1" : "#590094",
-			"color2" : "#ff9e15",
-			"angle" : "8"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Augmented Reality",
-				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience.",
-				"link" : {
-					"title" : "Share the Journey",
-					"url" : "https://civilrightstrail.com/book-landing-page/"
-				}
-			},
-			{
-				"title" : "Markerless",
-				"body" : "There was one major catch when this project kicked off - the physical book was already going to print. This meant the AR experience had to work off of existing pages, with no additional markers to assist with tracking and activation. As an added challenge, we also needed an affordable web-based solution to keep the barrier to entry low. With a bit of research and light modification, we ultimately settled on the open source AR.js library."
-			},
-			{
-				"title" : "Remote Benefits",
-				"body" : "Working remotely during this project offered some unexpected benefits. Throughout the development process, the web app received incidental testing across a wide variety lighting conditions and devices, as collaborators had to review content in their own homes. This helped catch issues with glare, page curl affecting tracking, and first-time user experience. The resulting product benefited from these findings, and helped inform future AR activations."
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the lead developer, handling the majority of the programming, image training, framework modifications, and testing."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "WebGL, A-Frame, AR.js"
-			}
-		]
-	},
-	{
-		"title": "Spacehole",
-		"client": "Furious Union",
-		"type" : "VR Game",
-		"video": "MegaSpacehole_720.mp4",
-		"gradient" : {
-			"color1" : "#c93600",
-			"color2" : "#270091",
-			"angle" : "-10"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Get Rekt!",
-				"body" : "Mega Spacehole is a virtual reality arcade game, filled with dozens of blowing things up with your face - no controller needed.",
-				"link" : {
-					"title" : "Play the game on GearVR",
-					"url" : "https://www.oculus.com/experiences/gear-vr/1056447741054271/"
-				}
-			},
-			{
-				"title" : "Early Adopters",
-				"body" : "Released in 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the fledgling days of the platform."
-			},
-			{
-				"title" : "Around the World",
-				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully launching in international markets across a broad range of platforms."
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the developer half of the two man team behind this, working many long nights and weekends to bring this indie game to market."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "Unity, Samsung GearVR"
-			}
-		]
-	},
-	{
-		"title": "Wayfinding",
-		"client": "Atlanta History Center",
-		"type" : "Web App",
-		"video": "AHCMontage.mp4",
-		"gradient" : {
-			"color1" : "#007900",
-			"color2" : "#bfdf6c",
-			"angle" : "-20"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Finding a Way",
-				"body" : "This interactive map provides information and directions to visitors at the Atlanta History Center. It was intended for both kiosks and mobile devices, and included a dedicated event map in the parking deck.",
-				"link" : {
-					"title" : "See it in action",
-					"url" : "https://wayfinding.atlantahistorycenter.com/"
-				}
-			},
-			{
-				"title" : "Infrastructure",
-				"body" : "The project itself came with a few constraints. Ideally the map would work on existing infrastructure, and be simple to deploy and migrate. The kiosk screens shouldn't require any new software subscriptions or proprietary hardware. It needed an easy-to-use CMS, so employees could update the event display daily. We settled on a Vue-based front end, and a CMS driven by PHP and SQLite."
-			},
-			{
-				"title" : "Accessible Information",
-				"body" : "The map is as informative as it is utilitarian, designed to help guests learn about exhibits and locations they may otherwise miss. It also included practical information on parking, wheelchair accessible paths, and ticketing. Following a successful launch, we also added localization for multiple languages, to better serve all visitors."
-			},
-			{
-				"title" : "A Convoluted Path",
-				"body" : "There were some bumps along the way - namely, a global pandemic, which required a quick pivot on the project deliverables. The mobile version of the map took priority, and more emphasis was placed on the outdoor areas. We added an information window, to provide easily editable messaging on ever-changing restrictions and mask mandates. "
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the lead developer, handling all aspects of the tech stack from conception to delivery. I worked closely with museum staff and our design team to determine requirements, and deliver at every stage of the project."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "Vue, CockpitCMS, Vivus"
-			}
-		]
-	},
-	{
 		"title": "Ephemera",
 		"client": "Personal Projects",
 		"type" : "Personal Projects",
@@ -332,27 +332,11 @@
 				}
 			},
 			{
-				"title" : "Deep Dream",
-				"body" : "An experiment applying neural network style transfer to video footage, the goal being to find combinations of style images and video that produced compelling results. As this was my first time working with neural networks of any kind, this used pretrained models and an open source style transfer implementation.", 
-				"link" : {
-					"title" : "Watch the video",
-					"url" : "https://vimeo.com/288666945"
-				}
-			},
-			{
 				"title" : "Spoopy Woods",
 				"body" : "A quick game demo, created in collaboration with an artist to test new technologies and workflows. Intended to showcase Spine animation, normal mapping on 2D sprites, and novel level design techniques. Not intended to perform well on low end devices.",
 				"link" : {
 					"title" : "Check out the project source",
 					"url" : "https://github.com/CyanLetter/SpineJune"
-				}
-			},
-			{
-				"title" : "Flavor Mashup",
-				"body" : "A silly website to create new and often vile food combinations, accompanied by a (now defunct) Twitter bot. There are many random generators, but this one is mine.",
-				"link" : {
-					"title" : "Make a mashup at flavormashup.com",
-					"url" : "https://flavormashup.com/"
 				}
 			}
 		]
