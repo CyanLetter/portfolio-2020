@@ -1,77 +1,5 @@
 [
 	{
-		"title": "Fantastical",
-		"client": "Fantastica Labs",
-		"type" : "Installation",
-		"video": "FantasticalMontage.mp4",
-		"gradient" : {
-			"color1" : "#04138f",
-			"color2" : "#09d5df",
-			"angle" : "10"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Winter Wonderland",
-				"body" : "Santa's Fantastical is an immersive holiday experience, featuring multiple installations and games within a maze of indoor spaces. I worked on a portion of the interactive activations, from soaring auroras to virtual snowball fights."
-			},
-			{
-				"title" : "Depth Sensing",
-				"body" : "These experiences are built in Unity, and driven by Intel RealSense depth cameras. These cameras were used to track the positions of guests and objects, translating the real world into particle systems and virtual physics objects."
-			},
-			{
-				"title" : "Yeti Tracks",
-				"body" : "Tracking small, white snowballs against a winter landscape presented some unique challenges, especially when you add high velocity into the mix. Through multiple iterations of different tracking techniques, the experience achieved accuracy and reliability for over a dozen simultaneous guests."
-			},
-			{
-				"title" : "Particles Galore",
-				"body" : "Unity's visual effect graph drives the realtime effects in these experiences, allowing for beautiful visual landscapes of millions of particles with relatively low overhead."
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the lead developer, handling the programming and realtime visual effects for the aurora, slide, and snowball fight experiences. I also worked on-site during testing and installation to ensure things got up and running smoothly."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "Unity, Intel RealSense, OpenCV"
-			}
-		]
-	},
-	{
-		"title": "Street",
-		"client": "Sesame Workshop",
-		"type" : "Web Games",
-		"video": "SesameMontage.mp4",
-		"gradient" : {
-			"color1" : "#980909",
-			"color2" : "#ddd100",
-			"angle" : "-18"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Making Muppets Dance",
-				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to flinging garbage onto an endless series of suits for Oscar the Grouch."
-			},
-			{
-				"title" : "Web Games for All",
-				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed for optimal performance across older browsers and devices."
-			},
-			{
-				"title" : "Endless Engines",
-				"body" : "Over the years, technologies and production techniques have changed. These games have been built one a wide variety of platforms to match - numerous custom engines built on Flash, CreateJS, and PixiJS."
-			}, 
-			{
-				"title" : "Role",
-				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, Reuse and Reinvent, Ramp Racers, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
-			}
-		]
-	},
-	{
 		"title": "Rights",
 		"client": "US Civil Rights Trail",
 		"type" : "AR Web App",
@@ -106,6 +34,40 @@
 			{
 				"title" : "Technologies",
 				"body" : "WebGL, A-Frame, AR.js"
+			}
+		]
+	},
+	{
+		"title": "Street",
+		"client": "Sesame Workshop",
+		"type" : "Web Games",
+		"video": "SesameMontage.mp4",
+		"gradient" : {
+			"color1" : "#980909",
+			"color2" : "#ddd100",
+			"angle" : "-18"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Making Muppets Dance",
+				"body" : "I have had the pleasure of working on numerous educational games and activities for Sesame Street - everything from sending Elmo hurtling through space, to flinging garbage onto an endless series of suits for Oscar the Grouch."
+			},
+			{
+				"title" : "Web Games for All",
+				"body" : "The goal of any Sesame Street game is to provide education and entertainment to all, which means not limiting access based on hardware or platform. All of these games are built for the web, and designed for optimal performance across older browsers and devices."
+			},
+			{
+				"title" : "Endless Engines",
+				"body" : "Over the years, technologies and production techniques have changed. These games have been built one a wide variety of platforms to match - numerous custom engines built on Flash, CreateJS, and PixiJS."
+			}, 
+			{
+				"title" : "Role",
+				"body" : "I have been the lead developer on many of these games and the frameworks behind them, including Super Salad Diner, Elmo's World Games, Show Me The Cookies, Pinball Number Count, The Cookie Games, Junk My Jacket, Big Bird's Basketball, Abby's Smoothie Maker, Comfy Cozy Nest, Reuse and Reinvent, Ramp Racers, and Breathe Think Do. Additionally, I provided direction and support on several other games and activities."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
 			}
 		]
 	},
@@ -190,40 +152,78 @@
 		]
 	},
 	{
-		"title": "Spacehole",
-		"client": "Furious Union",
-		"type" : "VR Game",
-		"video": "MegaSpacehole_720.mp4",
+		"title": "Fantastical",
+		"client": "Fantastica Labs",
+		"type" : "Installation",
+		"video": "FantasticalMontage.mp4",
 		"gradient" : {
-			"color1" : "#c93600",
-			"color2" : "#270091",
-			"angle" : "-10"
+			"color1" : "#04138f",
+			"color2" : "#09d5df",
+			"angle" : "10"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Get Rekt!",
-				"body" : "Mega Spacehole is a virtual reality arcade game, filled with dozens of blowing things up with your face - no controller needed.",
-				"link" : {
-					"title" : "Play the game on GearVR",
-					"url" : "https://www.oculus.com/experiences/gear-vr/1056447741054271/"
-				}
+				"title" : "Winter Wonderland",
+				"body" : "Santa's Fantastical is an immersive holiday experience, featuring multiple installations and games within a maze of indoor spaces. I worked on a portion of the interactive activations, from soaring auroras to virtual snowball fights."
 			},
 			{
-				"title" : "Early Adopters",
-				"body" : "Released in 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the fledgling days of the platform."
+				"title" : "Depth Sensing",
+				"body" : "These experiences are built in Unity, and driven by Intel RealSense depth cameras. These cameras were used to track the positions of guests and objects, translating the real world into particle systems and virtual physics objects."
 			},
 			{
-				"title" : "Around the World",
-				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully launching in international markets across a broad range of platforms."
+				"title" : "Yeti Tracks",
+				"body" : "Tracking small, white snowballs against a winter landscape presented some unique challenges, especially when you add high velocity into the mix. Through multiple iterations of different tracking techniques, the experience achieved accuracy and reliability for over a dozen simultaneous guests."
+			},
+			{
+				"title" : "Particles Galore",
+				"body" : "Unity's visual effect graph drives the realtime effects in these experiences, allowing for beautiful visual landscapes of millions of particles with relatively low overhead."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the developer half of the two man team behind this, working many long nights and weekends to bring this indie game to market."
+				"body" : "I was the lead developer, handling the programming and realtime visual effects for the aurora, slide, and snowball fight experiences. I also worked on-site during testing and installation to ensure things got up and running smoothly."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "Unity, Samsung GearVR"
+				"body" : "Unity, Intel RealSense, OpenCV"
+			}
+		]
+	},
+	{
+		"title": "Liquid",
+		"client": "Tech Demo",
+		"type" : "Installation",
+		"video": "CanvasInk_02.mp4",
+		"gradient" : {
+			"color1" : "#03cfa0",
+			"color2" : "#0271b4",
+			"angle" : "18"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Material Science",
+				"body" : "This proof of concept turns a touch screen interface into a novel tactile experience. Fluid visuals are projected onto an elastic screen material, and vibrant colors bloom under the users fingertips as they sink deeply into the screen surface."
+			},
+			{
+				"title" : "Touch Design",
+				"body" : "This project leverages TouchDesigner's powerful realtime video compositing, as well as plug and play modules for depth sensors and computer vision."
+			},
+			{
+				"title" : "Role",
+				"body" : "This was a solo project, I handled everything from design concept to programming and execution."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "TouchDesigner, Intel RealSense"
+			},
+			{
+				"title" : "Credits",
+				"body" : "Free HD Stock-Footage and Motion Graphics by CyberWebFX.",
+				"link" : {
+					"title" : "https://www.youtube.com/c/CyberWebFX",
+					"url" : "https://www.youtube.com/c/CyberWebFX"
+				}
 			}
 		]
 	},
@@ -270,40 +270,40 @@
 		]
 	},
 	{
-		"title": "Liquid",
-		"client": "Tech Demo",
-		"type" : "Installation",
-		"video": "CanvasInk_02.mp4",
+		"title": "Spacehole",
+		"client": "Furious Union",
+		"type" : "VR Game",
+		"video": "MegaSpacehole_720.mp4",
 		"gradient" : {
-			"color1" : "#03cfa0",
-			"color2" : "#0271b4",
-			"angle" : "18"
+			"color1" : "#c93600",
+			"color2" : "#270091",
+			"angle" : "-10"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Material Science",
-				"body" : "This proof of concept turns a touch screen interface into a novel tactile experience. Fluid visuals are projected onto an elastic screen material, and vibrant colors bloom under the users fingertips as they sink deeply into the screen surface."
+				"title" : "Get Rekt!",
+				"body" : "Mega Spacehole is a virtual reality arcade game, filled with dozens of blowing things up with your face - no controller needed.",
+				"link" : {
+					"title" : "Play the game on GearVR",
+					"url" : "https://www.oculus.com/experiences/gear-vr/1056447741054271/"
+				}
 			},
 			{
-				"title" : "Touch Design",
-				"body" : "This project leverages TouchDesigner's powerful realtime video compositing, as well as plug and play modules for depth sensors and computer vision."
+				"title" : "Early Adopters",
+				"body" : "Released in 2016 for Gear VR, this was developed in the early days of consumer virtual reality. Development kits and beta software were necessities, and this was one of a handful of titles released in the fledgling days of the platform."
+			},
+			{
+				"title" : "Around the World",
+				"body" : "Licensing deals ensured that this game expanded beyond the GearVR, successfully launching in international markets across a broad range of platforms."
 			},
 			{
 				"title" : "Role",
-				"body" : "This was a solo project, I handled everything from design concept to programming and execution."
+				"body" : "I was the developer half of the two man team behind this, working many long nights and weekends to bring this indie game to market."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "TouchDesigner, Intel RealSense"
-			},
-			{
-				"title" : "Credits",
-				"body" : "Free HD Stock-Footage and Motion Graphics by CyberWebFX.",
-				"link" : {
-					"title" : "https://www.youtube.com/c/CyberWebFX",
-					"url" : "https://www.youtube.com/c/CyberWebFX"
-				}
+				"body" : "Unity, Samsung GearVR"
 			}
 		]
 	},
