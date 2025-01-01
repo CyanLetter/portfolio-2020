@@ -13,11 +13,7 @@
 		"articleContent": [
 			{
 				"title" : "Augmented Reality",
-				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience.",
-				"link" : {
-					"title" : "Share the Journey",
-					"url" : "https://civilrightstrail.com/book-landing-page/"
-				}
+				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience."
 			},
 			{
 				"title" : "Markerless",
