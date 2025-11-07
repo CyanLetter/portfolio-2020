@@ -4,10 +4,10 @@
 		<section class="about-text">
 			<h1>Hello.</h1>
 			<p>
-				I am <strong>Dakota Ling</strong>, a Senior Unity Developer at Osso VR. I have been working as a creative software developer for over 10 years, building engaging interactive experiences for platforms ranging from tiny phones to mammoth projections and virtual reality headsets.
+				I am <strong>Dakota Ling</strong>, a software engineer and technical lead with 13 years of experience delivering web, mobile, and XR applications. I love taking projects from "we've never done this before" to successful delivery.
 			</p>
 			<p>
-				Projects displayed here represent work I have done both independently and as part of a larger team. I handled all design and development for the site itself. Tools and frameworks used include Sketch, Vue, and GSAP. Typefaces used are Libre Baskerville, PT Sans, and League Gothic. Icons by Simple Icons. 
+				Projects displayed here represent work I have done as part of a larger team as well as independently. They cover a range of technologies and platforms, including VR/AR apps, museum installations, full-stack web projects, mobile apps, and educational games. I thrive on variety, and on building great relationships across teams and disciplines to get things done.
 			</p>
 			<p>
 				Feel free to get in touch at <strong><a href="mailto:hello@dakotaling.com">hello@dakotaling.com</a></strong>
