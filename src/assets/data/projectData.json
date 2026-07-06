@@ -5,14 +5,14 @@
 		"type" : "VR App",
 		"video": "LiquidStackGigaModular.mp4",
 		"gradient" : {
-			"color1" : "#EAEAEA",
-			"color2" : "#F8D92D",
+			"color1" : "#dbd6af",
+			"color2" : "#f2d24e",
 			"angle" : "-20"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Cool Runnning",
+				"title" : "Cool Running",
 				"body" : "The Liquidstack VR application is a showcase of their datacenter CDU cooling products. What began as a quick turnaround for one produt has turned into a showcase of multiple products, and has been instrumental to their sales team."
 			},
 			{
@@ -68,36 +68,36 @@
 		]
 	},
 	{
-		"title": "Rights",
-		"client": "US Civil Rights Trail",
-		"type" : "AR Web App",
-		"video": "USCRTMontage.mp4",
+		"title": "Science",
+		"client": "PBS Kids",
+		"type" : "Mobile App",
+		"video": "ScienceAppMontage.mp4",
 		"gradient" : {
-			"color1" : "#590094",
-			"color2" : "#ff9e15",
-			"angle" : "8"
+			"color1" : "#00bde3",
+			"color2" : "#22bb53",
+			"angle" : "20"
 		},
 		"articleColor" : "#545454",
 		"articleContent": [
 			{
-				"title" : "Augmented Reality",
-				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience."
+				"title" : "Play and Learn",
+				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters."
 			},
 			{
-				"title" : "Markerless",
-				"body" : "There was one major catch when this project kicked off - the physical book was already going to print. This meant the AR experience had to work off of existing pages, with no additional markers to assist with tracking and activation. As an added challenge, we also needed an affordable web-based solution to keep the barrier to entry low. With a bit of research and light modification, we ultimately settled on the open source AR.js library."
+				"title" : "Award Winning",
+				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
 			},
 			{
-				"title" : "Remote Benefits",
-				"body" : "Working remotely during this project offered some unexpected benefits. Throughout the development process, the web app received incidental testing across a wide variety lighting conditions and devices, as collaborators had to review content in their own homes. This helped catch issues with glare, page curl affecting tracking, and first-time user experience. The resulting product benefited from these findings, and helped inform future AR activations."
+				"title" : "Light and Water",
+				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, simulating smooth fluid dynamics on low end mobile devices presented it's own fun challenge."
 			},
 			{
 				"title" : "Role",
-				"body" : "I was the lead developer, handling the majority of the programming, image training, framework modifications, and testing."
+				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
 			},
 			{
 				"title" : "Technologies",
-				"body" : "WebGL, A-Frame, AR.js"
+				"body" : "Unity, Adobe Animate"
 			}
 		]
 	},
@@ -132,6 +132,40 @@
 			{
 				"title" : "Technologies",
 				"body" : "CreateJS, PixiJS, Adobe Animate, Springroll, Unity"
+			}
+		]
+	},
+	{
+		"title": "Rights",
+		"client": "US Civil Rights Trail",
+		"type" : "AR Web App",
+		"video": "USCRTMontage.mp4",
+		"gradient" : {
+			"color1" : "#590094",
+			"color2" : "#ff9e15",
+			"angle" : "8"
+		},
+		"articleColor" : "#545454",
+		"articleContent": [
+			{
+				"title" : "Augmented Reality",
+				"body" : "The official US Civil Rights Trail book includes a companion web app, which presents additional content through an augmented reality lens. The companion app recognizes and tracks three of the full-page spreads included in the book, bringing up 3D scenes and video content tailored to each page. I had the pleasure of handling the technical aspects of this AR experience."
+			},
+			{
+				"title" : "Markerless",
+				"body" : "There was one major catch when this project kicked off - the physical book was already going to print. This meant the AR experience had to work off of existing pages, with no additional markers to assist with tracking and activation. As an added challenge, we also needed an affordable web-based solution to keep the barrier to entry low. With a bit of research and light modification, we ultimately settled on the open source AR.js library."
+			},
+			{
+				"title" : "Remote Benefits",
+				"body" : "Working remotely during this project offered some unexpected benefits. Throughout the development process, the web app received incidental testing across a wide variety lighting conditions and devices, as collaborators had to review content in their own homes. This helped catch issues with glare, page curl affecting tracking, and first-time user experience. The resulting product benefited from these findings, and helped inform future AR activations."
+			},
+			{
+				"title" : "Role",
+				"body" : "I was the lead developer, handling the majority of the programming, image training, framework modifications, and testing."
+			},
+			{
+				"title" : "Technologies",
+				"body" : "WebGL, A-Frame, AR.js"
 			}
 		]
 	},
@@ -174,40 +208,6 @@
 			{
 				"title" : "Technologies",
 				"body" : "Vue, CockpitCMS, Vivus"
-			}
-		]
-	},
-	{
-		"title": "Science",
-		"client": "PBS Kids",
-		"type" : "Mobile App",
-		"video": "ScienceAppMontage.mp4",
-		"gradient" : {
-			"color1" : "#00bde3",
-			"color2" : "#22bb53",
-			"angle" : "20"
-		},
-		"articleColor" : "#545454",
-		"articleContent": [
-			{
-				"title" : "Play and Learn",
-				"body" : "The Play and Learn Science app is an exploration into the physical phenomena of our world for PBS Kids. It gives kids the opportunity to play with light and shadow, construct water walls, and control the weather with the guidance of classic PBS Kids characters."
-			},
-			{
-				"title" : "Award Winning",
-				"body" : "Beloved by kids, parents, and educators, this app received the prestigious Excellence in Early Learning Digital Media Award from the American Library Association."
-			},
-			{
-				"title" : "Light and Water",
-				"body" : "There is some fun technology underneath the 2D animated surface. Unique shaders simulate 2D shadows and generate metaballs for water. And speaking of water, simulating smooth fluid dynamics on low end mobile devices presented it's own fun challenge."
-			},
-			{
-				"title" : "Role",
-				"body" : "I was the lead developer on this project, handling the majority of the programming and scene construction in Unity."
-			},
-			{
-				"title" : "Technologies",
-				"body" : "Unity, Adobe Animate"
 			}
 		]
 	},
